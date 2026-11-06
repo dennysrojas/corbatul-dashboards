@@ -32,7 +32,10 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
   );
 
   const formatCurrency = (val: number) => `${Math.round(val).toLocaleString()} €`;
-  const formatPercent = (val: number) => `${val.toFixed(1)}%`;
+  const formatPercent = (val: number) => {
+    const pct = Math.abs(val) <= 1 && val !== 0 ? val * 100 : val;
+    return `${pct.toFixed(1)}%`;
+  };
 
   if (!currentStory) return null;
 
@@ -510,7 +513,10 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                         <div className="text-right">
                           <span className="text-xs uppercase font-mono text-zinc-400 block">Cuota Mercado</span>
                           <span className="text-lg font-serif font-bold text-zinc-100 tabular-nums">
-                            {(currentStory.consequences.competitiveImpact.marketShare * 100).toFixed(1)}%
+                            {(currentStory.consequences.competitiveImpact.marketShare > 1
+                              ? currentStory.consequences.competitiveImpact.marketShare
+                              : currentStory.consequences.competitiveImpact.marketShare * 100
+                            ).toFixed(1)}%
                           </span>
                         </div>
                       </div>
@@ -520,7 +526,12 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                         <div className="flex items-center justify-between mb-2">
                           <span className="font-serif font-bold text-zinc-950 text-sm">Veredicto Operativo</span>
                           <span className="font-mono text-xs text-zinc-600">
-                            Uso Telar: <strong className="text-zinc-900">{currentStory.consequences.operationalImpact.utilizationRate}%</strong>
+                            Uso Telar: <strong className="text-zinc-900">
+                              {(currentStory.consequences.operationalImpact.utilizationRate <= 1
+                                ? currentStory.consequences.operationalImpact.utilizationRate * 100
+                                : currentStory.consequences.operationalImpact.utilizationRate
+                              ).toFixed(2)}%
+                            </strong>
                           </span>
                         </div>
                         <p className="text-xs text-zinc-800 leading-relaxed font-sans">

@@ -202,7 +202,7 @@
       "consequences": {
         "operationalImpact": {
           "unitsProduced": 174615,
-          "utilizationRate": 0.6126,
+          "utilizationRate": 61.26,
           "overtimeIncidence": "Turno optimizado sin cuellos de botella",
           "machineBreakdowns": "Mantenimiento preventivo efectivo",
           "stockoutOccurred": false,
@@ -222,7 +222,7 @@
         "competitiveImpact": {
           "endingSharePrice": 1832.7,
           "sharePriceDelta": -496.6,
-          "marketShare": 10.4,
+          "marketShare": 0.104,
           "marketRank": 6,
           "competitorMovements": "Valor de Compañía se sitúa en 1832.7 pts. Consolidación de la posición competitiva frente a SmartOne y Spain10."
         },
@@ -278,7 +278,7 @@
       "consequences": {
         "operationalImpact": {
           "unitsProduced": 259000,
-          "utilizationRate": 0.8917,
+          "utilizationRate": 89.17,
           "overtimeIncidence": "Turno optimizado sin cuellos de botella",
           "machineBreakdowns": "Mantenimiento preventivo efectivo",
           "stockoutOccurred": false,
@@ -298,7 +298,7 @@
         "competitiveImpact": {
           "endingSharePrice": 2242.7,
           "sharePriceDelta": 410.0,
-          "marketShare": 15.7,
+          "marketShare": 0.157,
           "marketRank": 5,
           "competitorMovements": "Valor de Compañía se sitúa en 2242.7 pts. Consolidación de la posición competitiva frente a SmartOne y Spain10."
         },
@@ -354,7 +354,7 @@
       "consequences": {
         "operationalImpact": {
           "unitsProduced": 267500,
-          "utilizationRate": 93.9,
+          "utilizationRate": 93.86,
           "overtimeIncidence": "Turno optimizado sin cuellos de botella",
           "machineBreakdowns": "Mantenimiento preventivo efectivo",
           "stockoutOccurred": false,
@@ -374,7 +374,7 @@
         "competitiveImpact": {
           "endingSharePrice": 2596.5,
           "sharePriceDelta": 353.8,
-          "marketShare": 14.1,
+          "marketShare": 0.141,
           "marketRank": 3,
           "competitorMovements": "Valor de Compañía se sitúa en 2596.5 pts. Consolidación de la posición competitiva frente a SmartOne y Spain10."
         },
@@ -430,7 +430,7 @@
       "consequences": {
         "operationalImpact": {
           "unitsProduced": 278000,
-          "utilizationRate": 94.9,
+          "utilizationRate": 97.54,
           "overtimeIncidence": "Turno optimizado sin cuellos de botella",
           "machineBreakdowns": "Mantenimiento preventivo efectivo",
           "stockoutOccurred": false,
@@ -444,13 +444,13 @@
           "cogsSummary": "Coste de ventas contenido en 2327335€. Margen bruto escaló al 49.3%.",
           "netIncome": 365700,
           "netMargin": 8.0,
-          "endingCash": 474877,
+          "endingCash": 0,
           "financialVerdict": "Culminación brillante del plan FINFORCE. Ingresos de 4,59M€ (+11.5%), Margen bruto del 49.3% (2.26M€), Resultado Neto récord de +365.700€ y Valor de Compañía alcanzando 2.879 puntos (crecimiento acumulado de +1.046 puntos desde el suelo de 2026)."
         },
         "competitiveImpact": {
           "endingSharePrice": 2879.0,
           "sharePriceDelta": 282.5,
-          "marketShare": 13.9,
+          "marketShare": 0.139,
           "marketRank": 3,
           "competitorMovements": "Valor de Compañía se sitúa en 2879.0 pts. Consolidación de la posición competitiva frente a SmartOne y Spain10."
         },
@@ -673,7 +673,7 @@
       "netIncome": 365700,
       "netMargin": 8.0,
       "balanceSheet": {
-        "cashAndEquivalents": 474877,
+        "cashAndEquivalents": 0,
         "accountsReceivable": 353854,
         "inventoriesFinishedGoods": 77232,
         "inventoriesRawMaterials": 28467,
@@ -753,10 +753,10 @@
     {
       "period": 4,
       "firmId": "roura1940",
-      "nominalCapacity": 293000,
+      "nominalCapacity": 285000,
       "practicalCapacity": 285000,
       "effectiveProductionUnits": 278000,
-      "capacityUtilizationRate": 94.9,
+      "capacityUtilizationRate": 0.9754,
       "overtimeHoursPercent": 2.5,
       "machineBreakdownRate": 1.2,
       "qualityDefectRate": 1.5,

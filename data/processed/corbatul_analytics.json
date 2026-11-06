@@ -203,7 +203,7 @@
       "consequences": {
         "operationalImpact": {
           "unitsProduced": 174615,
-          "utilizationRate": 0.6126,
+          "utilizationRate": 61.26,
           "overtimeIncidence": "Turno optimizado sin cuellos de botella",
           "machineBreakdowns": "Mantenimiento preventivo regular",
           "stockoutOccurred": false,
@@ -213,7 +213,7 @@
         "financialImpact": {
           "totalRevenue": 2549514,
           "grossProfit": 686172,
-          "grossMargin": 0.269,
+          "grossMargin": 26.9,
           "cogsSummary": "Coste de ventas de 1,863,342€. Margen bruto: 26.9%.",
           "netIncome": -841512,
           "netMargin": -33.0,
@@ -223,7 +223,7 @@
         "competitiveImpact": {
           "endingSharePrice": 1832.7,
           "sharePriceDelta": -496.6,
-          "marketShare": 10.4,
+          "marketShare": 0.104,
           "marketRank": 6,
           "competitorMovements": "Valor de la Compañía alcanza 1832.7 puntos (Puesto 6 de 7)."
         },
@@ -283,7 +283,7 @@
       "consequences": {
         "operationalImpact": {
           "unitsProduced": 259000,
-          "utilizationRate": 0.8917,
+          "utilizationRate": 89.17,
           "overtimeIncidence": "Turno optimizado sin cuellos de botella",
           "machineBreakdowns": "Mantenimiento preventivo regular",
           "stockoutOccurred": false,
@@ -363,7 +363,7 @@
       "consequences": {
         "operationalImpact": {
           "unitsProduced": 267500,
-          "utilizationRate": 93.9,
+          "utilizationRate": 93.86,
           "overtimeIncidence": "Turno optimizado sin cuellos de botella",
           "machineBreakdowns": "Mantenimiento preventivo regular",
           "stockoutOccurred": false,
@@ -373,10 +373,10 @@
         "financialImpact": {
           "totalRevenue": 4116519,
           "grossProfit": 1901688,
-          "grossMargin": 0.462,
+          "grossMargin": 46.2,
           "cogsSummary": "Coste de ventas de 2,214,831€. Margen bruto: 46.2%.",
           "netIncome": 111404,
-          "netMargin": 0.02706267115492483,
+          "netMargin": 2.7,
           "endingCash": 634699,
           "financialVerdict": "¡Éxito histórico! Resultado Neto positivo de +111.404€ y Valor de Compañía ascendiendo a 2.596,5 puntos (+354 puntos). Roura1940 consolida el tercer puesto absoluto de la industria, pisándole los talones a SmartOne y Spain10."
         },
@@ -443,7 +443,7 @@
       "consequences": {
         "operationalImpact": {
           "unitsProduced": 278000,
-          "utilizationRate": 94.9,
+          "utilizationRate": 97.54,
           "overtimeIncidence": "Turno optimizado sin cuellos de botella",
           "machineBreakdowns": "Mantenimiento preventivo regular",
           "stockoutOccurred": false,
@@ -453,11 +453,11 @@
         "financialImpact": {
           "totalRevenue": 4589037,
           "grossProfit": 2261702,
-          "grossMargin": 0.493,
+          "grossMargin": 49.3,
           "cogsSummary": "Coste de ventas de 2,327,335€. Margen bruto: 49.3%.",
           "netIncome": 365700,
-          "netMargin": 0.07968992187249743,
-          "endingCash": 474877,
+          "netMargin": 8.0,
+          "endingCash": 0,
           "financialVerdict": "Culminación brillante del plan FINFORCE. Ingresos de 4,59M€ (+11.5%), Margen bruto del 49.3% (2.26M€), Resultado Neto récord de +365.700€ y Valor de Compañía alcanzando 2.879 puntos (crecimiento acumulado de +1.046 puntos desde el suelo de 2026)."
         },
         "competitiveImpact": {
@@ -694,7 +694,7 @@
       "netIncome": 365700,
       "netMargin": 0.07968992187249743,
       "balanceSheet": {
-        "cashAndEquivalents": 474877,
+        "cashAndEquivalents": 0,
         "accountsReceivable": 353854,
         "inventoriesFinishedGoods": 77232,
         "inventoriesRawMaterials": 28467,
@@ -778,10 +778,10 @@
       "period": 4,
       "year": 2029,
       "firmId": "roura1940",
-      "nominalCapacity": 293000,
+      "nominalCapacity": 285000,
       "practicalCapacity": 285000,
       "effectiveProductionUnits": 278000,
-      "capacityUtilizationRate": 0.949,
+      "capacityUtilizationRate": 0.9754,
       "overtimeHoursPercent": 2.5,
       "machineBreakdownRate": 1.2,
       "qualityDefectRate": 1.5,

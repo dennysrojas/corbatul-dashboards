@@ -295,8 +295,8 @@
           "cogsSummary": "Coste de ventas de 2,268,020€. Margen bruto se expande a 36.8%.",
           "netIncome": -257626,
           "netMargin": -0.072,
-          "endingCash": 780998,
-          "financialVerdict": "Ingresos alcanzaron 3.59M€ (+6.1%). El margen bruto se expandió en +170k€ y el desapalancamiento redujo la deuda LP a 620k€."
+          "endingCash": 1614597,
+          "financialVerdict": "Ingresos alcanzaron 3.59M€ (+6.1%). El margen bruto se expandió en +170k€, la tesorería de cierre ascendió a 1.61M€ y el desapalancamiento redujo la deuda LP a 620k€."
         },
         "competitiveImpact": {
           "endingSharePrice": 2462.2,
@@ -315,7 +315,7 @@
       "roundTitle": "2028 · El Gran Giro Rentable (Turnaround Consolidado)",
       "strategicTheme": "Entrada masiva en beneficios netos, optimización fabril y erradicación de pérdidas en calcetines",
       "initialState": {
-        "cashStarting": 780998,
+        "cashStarting": 1614597,
         "inventoryStartingUnits": 4200,
         "nominalCapacity": 293000,
         "inheritedSharePrice": 2462.2,
@@ -568,19 +568,19 @@
       "netIncome": -257626,
       "netMargin": -0.072,
       "balanceSheet": {
-        "cashAndEquivalents": 780998,
+        "cashAndEquivalents": 1614597,
         "accountsReceivable": 280402,
         "inventoriesFinishedGoods": 52000,
         "inventoriesRawMaterials": 19695,
         "netPropertyPlantEquipment": 2820625,
-        "totalAssets": 4358720,
+        "totalAssets": 4694722,
         "shortTermDebt": 313036,
         "accountsPayable": 289431,
         "currentLiabilities": 602467,
         "longTermDebt": 619995,
         "totalLiabilities": 1222462,
-        "shareholdersEquity": 3382648,
-        "retainedEarnings": 333472,
+        "shareholdersEquity": 3393884,
+        "retainedEarnings": 591198,
         "sharePrice": 2462.2,
         "sharesOutstanding": 280000,
         "enterpriseValue": 2462200

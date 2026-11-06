@@ -413,8 +413,8 @@ def build_dataset():
                     "operationalVerdict": "Ventas récord de 363,058 uds. Inventario final ajustado al 2.3% sobre ventas (81.7k€)."
                 },
                 "financialImpact": {
-                    "totalRevenue": 5077621,
-                    "grossProfit": 2588532,
+                    "totalRevenue": 5077475,
+                    "grossProfit": 2588386,
                     "grossMargin": 0.510,
                     "cogsSummary": "Coste de ventas de 2,489,089€. Margen bruto histórico del 51.0%.",
                     "netIncome": 937448,
@@ -581,7 +581,7 @@ def build_dataset():
                 "salesForcePayroll": 690715,
                 "qualityAssurance": 256600,
                 "plantMaintenance": 138000,
-                "generalAdministrative": 224674,
+                "generalAdministrative": 235925,
                 "totalOPEX": 1534989
             },
             "ebitda": 451572,
@@ -620,10 +620,10 @@ def build_dataset():
             "period": 4,
             "year": 2029,
             "firmId": "puntoone",
-            "revenueStandard": 3508688,
-            "revenuePremium": 1355321,
-            "revenueSocks": 213611,
-            "totalRevenue": 5077621,
+            "revenueStandard": 3495625,
+            "revenuePremium": 1365100,
+            "revenueSocks": 216750,
+            "totalRevenue": 5077475,
             "costOfGoodsSold": {
                 "rawMaterialsUsed": 1085000,
                 "directLaborRegular": 645000,
@@ -634,14 +634,14 @@ def build_dataset():
                 "rejectionAndWasteCost": 124889,
                 "totalCOGS": 2489089
             },
-            "grossProfit": 2588532,
+            "grossProfit": 2588386,
             "grossMargin": 0.510,
             "operatingExpenses": {
                 "marketingAndAdvertising": 290000,
                 "salesForcePayroll": 745052,
                 "qualityAssurance": 314120,
                 "plantMaintenance": 126500,
-                "generalAdministrative": 226446,
+                "generalAdministrative": 207767,
                 "totalOPEX": 1702118
             },
             "ebitda": 1012914,
@@ -794,7 +794,7 @@ def build_dataset():
         # Period 4 (2029)
         {"period": 4, "year": 2029, "firmId": "spain10", "firmName": "Spain10", "marketShareUnits": 0.269, "marketShareRevenue": 0.286, "averagePrice": 15.3, "qualityPerceptionScore": 8.7, "totalRevenue": 9693383, "netIncome": 2191204, "accumulatedNetIncome": 3101204, "sharePrice": 3159.7, "marketCap": 3159700, "rankBySharePrice": 1, "rankByMarketShare": 1, "rankByAccumulatedProfit": 1},
         {"period": 4, "year": 2029, "firmId": "smartone", "firmName": "SmartOne", "marketShareUnits": 0.157, "marketShareRevenue": 0.156, "averagePrice": 14.3, "qualityPerceptionScore": 8.1, "totalRevenue": 5301244, "netIncome": 1291837, "accumulatedNetIncome": 2031837, "sharePrice": 3086.7, "marketCap": 3086700, "rankBySharePrice": 2, "rankByMarketShare": 2, "rankByAccumulatedProfit": 2},
-        {"period": 4, "year": 2029, "firmId": "puntoone", "firmName": "PuntoOne (FINEDGE)", "marketShareUnits": 0.154, "marketShareRevenue": 0.150, "averagePrice": 14.0, "qualityPerceptionScore": 9.1, "totalRevenue": 5077621, "netIncome": 937448, "accumulatedNetIncome": 957280, "sharePrice": 2980.3, "marketCap": 2980300, "rankBySharePrice": 3, "rankByMarketShare": 3, "rankByAccumulatedProfit": 3},
+        {"period": 4, "year": 2029, "firmId": "puntoone", "firmName": "PuntoOne (FINEDGE)", "marketShareUnits": 0.154, "marketShareRevenue": 0.150, "averagePrice": 14.0, "qualityPerceptionScore": 9.1, "totalRevenue": 5077475, "netIncome": 937448, "accumulatedNetIncome": 957280, "sharePrice": 2980.3, "marketCap": 2980300, "rankBySharePrice": 3, "rankByMarketShare": 3, "rankByAccumulatedProfit": 3},
         {"period": 4, "year": 2029, "firmId": "roura1940", "firmName": "Roura1940", "marketShareUnits": 0.142, "marketShareRevenue": 0.126, "averagePrice": 12.7, "qualityPerceptionScore": 7.4, "totalRevenue": 4261739, "netIncome": 546228, "accumulatedNetIncome": -273284, "sharePrice": 2800.5, "marketCap": 2800500, "rankBySharePrice": 4, "rankByMarketShare": 4, "rankByAccumulatedProfit": 5},
         {"period": 4, "year": 2029, "firmId": "stuart20", "firmName": "Stuart20", "marketShareUnits": 0.106, "marketShareRevenue": 0.112, "averagePrice": 15.2, "qualityPerceptionScore": 7.2, "totalRevenue": 3785585, "netIncome": 487486, "accumulatedNetIncome": 7486, "sharePrice": 2724.7, "marketCap": 2724700, "rankBySharePrice": 5, "rankByMarketShare": 5, "rankByAccumulatedProfit": 4},
         {"period": 4, "year": 2029, "firmId": "realman", "firmName": "RealMan", "marketShareUnits": 0.088, "marketShareRevenue": 0.097, "averagePrice": 15.7, "qualityPerceptionScore": 6.5, "totalRevenue": 3288277, "netIncome": -886496, "accumulatedNetIncome": -1796496, "sharePrice": 1689.4, "marketCap": 1689400, "rankBySharePrice": 6, "rankByMarketShare": 6, "rankByAccumulatedProfit": 6},
@@ -857,8 +857,8 @@ def build_dataset():
         {
             "period": 4,
             "previousPeriod": 3,
-            "revenueStandardDelta": 0.112,
-            "revenuePremiumDelta": 0.476,
+            "revenueStandardDelta": 0.108,
+            "revenuePremiumDelta": 0.487,
             "totalRevenueDelta": 0.224,
             "grossProfitDelta": 0.400,
             "netIncomeDelta": 0.520,

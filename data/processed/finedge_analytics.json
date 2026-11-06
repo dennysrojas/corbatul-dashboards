@@ -445,8 +445,8 @@
           "operationalVerdict": "Ventas récord de 363,058 uds. Inventario final ajustado al 2.3% sobre ventas (81.7k€)."
         },
         "financialImpact": {
-          "totalRevenue": 5077621,
-          "grossProfit": 2588532,
+          "totalRevenue": 5077475,
+          "grossProfit": 2588386,
           "grossMargin": 0.51,
           "cogsSummary": "Coste de ventas de 2,489,089€. Margen bruto histórico del 51.0%.",
           "netIncome": 937448,
@@ -611,7 +611,7 @@
         "salesForcePayroll": 690715,
         "qualityAssurance": 256600,
         "plantMaintenance": 138000,
-        "generalAdministrative": 224674,
+        "generalAdministrative": 235925,
         "totalOPEX": 1534989
       },
       "ebitda": 451572,
@@ -650,10 +650,10 @@
       "period": 4,
       "year": 2029,
       "firmId": "puntoone",
-      "revenueStandard": 3508688,
-      "revenuePremium": 1355321,
-      "revenueSocks": 213611,
-      "totalRevenue": 5077621,
+      "revenueStandard": 3495625,
+      "revenuePremium": 1365100,
+      "revenueSocks": 216750,
+      "totalRevenue": 5077475,
       "costOfGoodsSold": {
         "rawMaterialsUsed": 1085000,
         "directLaborRegular": 645000,
@@ -664,14 +664,14 @@
         "rejectionAndWasteCost": 124889,
         "totalCOGS": 2489089
       },
-      "grossProfit": 2588532,
+      "grossProfit": 2588386,
       "grossMargin": 0.51,
       "operatingExpenses": {
         "marketingAndAdvertising": 290000,
         "salesForcePayroll": 745052,
         "qualityAssurance": 314120,
         "plantMaintenance": 126500,
-        "generalAdministrative": 226446,
+        "generalAdministrative": 207767,
         "totalOPEX": 1702118
       },
       "ebitda": 1012914,
@@ -1213,7 +1213,7 @@
       "marketShareRevenue": 0.15,
       "averagePrice": 14.0,
       "qualityPerceptionScore": 9.1,
-      "totalRevenue": 5077621,
+      "totalRevenue": 5077475,
       "netIncome": 937448,
       "accumulatedNetIncome": 957280,
       "sharePrice": 2980.3,
@@ -1395,8 +1395,8 @@
     {
       "period": 4,
       "previousPeriod": 3,
-      "revenueStandardDelta": 0.112,
-      "revenuePremiumDelta": 0.476,
+      "revenueStandardDelta": 0.108,
+      "revenuePremiumDelta": 0.487,
       "totalRevenueDelta": 0.224,
       "grossProfitDelta": 0.4,
       "netIncomeDelta": 0.52,

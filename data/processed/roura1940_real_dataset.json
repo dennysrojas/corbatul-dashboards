@@ -1,0 +1,667 @@
+{
+  "meta": {
+    "title": "ROURA 1940 · Simulación Corbatul (CompanyGame) - Caso Verídico FINFORCE",
+    "team": {
+      "name": "FINFORCE",
+      "members": [
+        "Ingrid Daniela Correa Jimenez",
+        "Àgata Elisabeth Pazmiño Andrades",
+        "Andrea Mishell Quispillo Becerra"
+      ],
+      "evaluationContext": "Certificación / Evaluación ACBSP - Compañía ROURA 1940"
+    },
+    "industry": "Textil y Confección (Corbatas, Bufandas y Calcetines en España)",
+    "currencySymbol": "€",
+    "primaryFirmId": "roura1940",
+    "firms": [
+      {
+        "id": "smartone",
+        "name": "SmartOne",
+        "isOurFirm": false,
+        "color": "#3b82f6"
+      },
+      {
+        "id": "spain10",
+        "name": "Spain10",
+        "isOurFirm": false,
+        "color": "#10b981"
+      },
+      {
+        "id": "realman",
+        "name": "RealMan",
+        "isOurFirm": false,
+        "color": "#f97316"
+      },
+      {
+        "id": "fashionclub",
+        "name": "FashionClub",
+        "isOurFirm": false,
+        "color": "#ec4899"
+      },
+      {
+        "id": "roura1940",
+        "name": "Roura1940 (FINFORCE)",
+        "isOurFirm": true,
+        "color": "#C18E38"
+      },
+      {
+        "id": "puntoone",
+        "name": "PuntoOne",
+        "isOurFirm": false,
+        "color": "#8b5cf6"
+      },
+      {
+        "id": "stuart20",
+        "name": "Stuart20",
+        "isOurFirm": false,
+        "color": "#64748b"
+      }
+    ],
+    "products": [
+      {
+        "id": "corbatas",
+        "name": "Corbatas",
+        "category": "Core / Masivo",
+        "initialPrice": 17.0
+      },
+      {
+        "id": "bufandas",
+        "name": "Bufandas",
+        "category": "Premium / Temporada",
+        "initialPrice": 27.9
+      },
+      {
+        "id": "calcetines",
+        "name": "Calcetines",
+        "category": "Complementario / Entrada",
+        "initialPrice": 2.99
+      }
+    ]
+  },
+  "pnl_history": {
+    "2024": {
+      "ingresos": 3274513,
+      "coste_ventas": 2116632,
+      "margen": 1157881,
+      "margen_pct": 0.35,
+      "marketing": 185000,
+      "personal": 624608,
+      "id_diseno": 190800,
+      "depreciacion": 125500,
+      "insolvencias": 28617,
+      "generales": 137530,
+      "total_gastos": 1292055,
+      "resultado_bruto": -134174,
+      "ingresos_fin": 3510,
+      "gastos_fin": 83513,
+      "resultado_fin": -80003,
+      "extraordinario": 0,
+      "resultado_neto": -214177,
+      "valor_compania": 2175
+    },
+    "2025": {
+      "ingresos": 3346747,
+      "coste_ventas": 2258480,
+      "margen": 1088267,
+      "margen_pct": 0.325,
+      "marketing": 185000,
+      "personal": 642946,
+      "id_diseno": 190800,
+      "depreciacion": 125500,
+      "insolvencias": -10974,
+      "generales": 141793,
+      "total_gastos": 1275065,
+      "resultado_bruto": -186798,
+      "ingresos_fin": 13508,
+      "gastos_fin": 69820,
+      "resultado_fin": -56312,
+      "extraordinario": 0,
+      "resultado_neto": -243110,
+      "valor_compania": 2329.3
+    },
+    "2026": {
+      "ingresos": 2549514,
+      "coste_ventas": 1863342,
+      "margen": 686172,
+      "margen_pct": 0.269,
+      "marketing": 167000,
+      "personal": 741027,
+      "id_diseno": 50400,
+      "depreciacion": 148000,
+      "insolvencias": -17394,
+      "generales": 369110,
+      "total_gastos": 1458143,
+      "resultado_bruto": -771971,
+      "ingresos_fin": 23990,
+      "gastos_fin": 111531,
+      "resultado_fin": -87541,
+      "extraordinario": 0,
+      "resultado_neto": -859512,
+      "valor_compania": 1832.7
+    },
+    "2027": {
+      "ingresos": 3806940,
+      "coste_ventas": 2426931,
+      "margen": 1380009,
+      "margen_pct": 0.363,
+      "marketing": 150000,
+      "personal": 875147,
+      "id_diseno": 108950,
+      "depreciacion": 136750,
+      "insolvencias": 41447,
+      "generales": 955271,
+      "total_gastos": 2267565,
+      "resultado_bruto": -887557,
+      "ingresos_fin": 14994,
+      "gastos_fin": 86124,
+      "resultado_fin": -71130,
+      "extraordinario": 0,
+      "resultado_neto": -958687,
+      "valor_compania": 2242.7
+    },
+    "2028": {
+      "ingresos": 4116519,
+      "coste_ventas": 2214831,
+      "margen": 1901688,
+      "margen_pct": 0.462,
+      "marketing": 150000,
+      "personal": 804344,
+      "id_diseno": 108950,
+      "depreciacion": 125500,
+      "insolvencias": -23602,
+      "generales": 846977,
+      "total_gastos": 2012169,
+      "resultado_bruto": -110481,
+      "ingresos_fin": 0,
+      "gastos_fin": 101115,
+      "resultado_fin": -101115,
+      "extraordinario": 323000,
+      "resultado_neto": 111404,
+      "valor_compania": 2596.5
+    },
+    "2029": {
+      "ingresos": 4589037,
+      "coste_ventas": 2327335,
+      "margen": 2261702,
+      "margen_pct": 0.493,
+      "marketing": 200000,
+      "personal": 836439,
+      "id_diseno": 124550,
+      "depreciacion": 114000,
+      "insolvencias": 8488,
+      "generales": 745890,
+      "total_gastos": 2029367,
+      "resultado_bruto": 232335,
+      "ingresos_fin": 0,
+      "gastos_fin": 79636,
+      "resultado_fin": -79636,
+      "extraordinario": 213000,
+      "resultado_neto": 365700,
+      "valor_compania": 2879.0
+    }
+  },
+  "product_metrics": {
+    "2026": {
+      "prices": {
+        "corbatas": 17.0,
+        "bufandas": 27.9,
+        "calcetines": 2.99
+      },
+      "units_produced": {
+        "corbatas": 136500,
+        "bufandas": 17598,
+        "calcetines": 20517,
+        "total": 174615
+      },
+      "units_sold": {
+        "corbatas": 137842,
+        "bufandas": 17745,
+        "calcetines": 19680,
+        "total": 175267
+      },
+      "revenue": {
+        "corbatas": 2062116,
+        "bufandas": 435640,
+        "calcetines": 51758,
+        "total": 2549514
+      },
+      "gross_margin_pct": {
+        "corbatas": 0.279,
+        "bufandas": 0.316,
+        "calcetines": -0.527,
+        "total": 0.269
+      },
+      "ending_stock_units": {
+        "corbatas": 3324,
+        "bufandas": 426,
+        "calcetines": 1486,
+        "total": 5236
+      }
+    },
+    "2027": {
+      "prices": {
+        "corbatas": 17.5,
+        "bufandas": 28.5,
+        "calcetines": 3.0
+      },
+      "units_produced": {
+        "corbatas": 200000,
+        "bufandas": 29000,
+        "calcetines": 30000,
+        "total": 259000
+      },
+      "units_sold": {
+        "corbatas": 198695,
+        "bufandas": 28754,
+        "calcetines": 26706,
+        "total": 254155
+      },
+      "revenue": {
+        "corbatas": 3024138,
+        "bufandas": 713099,
+        "calcetines": 69703,
+        "total": 3806940
+      },
+      "gross_margin_pct": {
+        "corbatas": 0.366,
+        "bufandas": 0.416,
+        "calcetines": -0.328,
+        "total": 0.363
+      },
+      "ending_stock_units": {
+        "corbatas": 4629,
+        "bufandas": 672,
+        "calcetines": 4780,
+        "total": 10081
+      }
+    },
+    "2028": {
+      "prices": {
+        "corbatas": 18.2,
+        "bufandas": 29.6,
+        "calcetines": 3.4
+      },
+      "units_produced": {
+        "corbatas": 215000,
+        "bufandas": 29500,
+        "calcetines": 23000,
+        "total": 267500
+      },
+      "units_sold": {
+        "corbatas": 207924,
+        "bufandas": 29241,
+        "calcetines": 24367,
+        "total": 261532
+      },
+      "revenue": {
+        "corbatas": 3291437,
+        "bufandas": 752956,
+        "calcetines": 72126,
+        "total": 4116519
+      },
+      "gross_margin_pct": {
+        "corbatas": 0.467,
+        "bufandas": 0.492,
+        "calcetines": -0.061,
+        "total": 0.462
+      },
+      "ending_stock_units": {
+        "corbatas": 11705,
+        "bufandas": 931,
+        "calcetines": 3413,
+        "total": 16049
+      }
+    },
+    "2029": {
+      "prices": {
+        "corbatas": 18.5,
+        "bufandas": 30.0,
+        "calcetines": 3.5
+      },
+      "units_produced": {
+        "corbatas": 215000,
+        "bufandas": 35500,
+        "calcetines": 27500,
+        "total": 278000
+      },
+      "units_sold": {
+        "corbatas": 221728,
+        "bufandas": 35609,
+        "calcetines": 30276,
+        "total": 287613
+      },
+      "revenue": {
+        "corbatas": 3567604,
+        "bufandas": 929395,
+        "calcetines": 92039,
+        "total": 4589038
+      },
+      "gross_margin_pct": {
+        "corbatas": 0.499,
+        "bufandas": 0.494,
+        "calcetines": 0.24,
+        "total": 0.493
+      },
+      "ending_stock_units": {
+        "corbatas": 4977,
+        "bufandas": 822,
+        "calcetines": 637,
+        "total": 6436
+      }
+    }
+  },
+  "decisions": [
+    {
+      "year": 2026,
+      "status": "Afectado por omisión / penalización inicial de parámetros ('No Decisión' factor 0.95)",
+      "prices": {
+        "corbatas": 17.0,
+        "bufandas": 27.9,
+        "calcetines": 2.99
+      },
+      "channel_discount_pct": 12.0,
+      "brand_promotion": {
+        "corbatas": 80000,
+        "bufandas": 65000,
+        "calcetines": 10000,
+        "total": 155000
+      },
+      "sales_incentive_pct": {
+        "corbatas": 2.5,
+        "bufandas": 2.0,
+        "calcetines": 1.5
+      },
+      "design_budget": {
+        "corbatas": 27000,
+        "bufandas": 17000,
+        "calcetines": 6400,
+        "total": 50400
+      },
+      "range_width": {
+        "corbatas": 16,
+        "bufandas": 7,
+        "calcetines": 5
+      },
+      "suppliers": {
+        "corbatas": "Premium",
+        "bufandas": "Estándar",
+        "calcetines": "Económica"
+      },
+      "planned_production": {
+        "corbatas": 136500,
+        "bufandas": 17598,
+        "calcetines": 20517
+      }
+    },
+    {
+      "year": 2027,
+      "status": "Plan de Choque y Expansión de Capacidad",
+      "prices": {
+        "corbatas": 17.5,
+        "bufandas": 28.5,
+        "calcetines": 3.0
+      },
+      "channel_discount_pct": 13.0,
+      "brand_promotion": {
+        "corbatas": 75000,
+        "bufandas": 60000,
+        "calcetines": 15000,
+        "total": 150000
+      },
+      "sales_incentive_pct": {
+        "corbatas": 2.0,
+        "bufandas": 1.5,
+        "calcetines": 1.0
+      },
+      "design_budget": {
+        "corbatas": 27000,
+        "bufandas": 17000,
+        "calcetines": 6000,
+        "total": 50000
+      },
+      "range_width": {
+        "corbatas": 16,
+        "bufandas": 7,
+        "calcetines": 5
+      },
+      "suppliers": {
+        "corbatas": "Premium",
+        "bufandas": "Estándar",
+        "calcetines": "Económica"
+      },
+      "planned_production": {
+        "corbatas": 200000,
+        "bufandas": 29000,
+        "calcetines": 30000
+      }
+    },
+    {
+      "year": 2028,
+      "status": "Consolidación de Márgenes y Control de Costes",
+      "prices": {
+        "corbatas": 18.2,
+        "bufandas": 29.6,
+        "calcetines": 3.4
+      },
+      "channel_discount_pct": 13.0,
+      "brand_promotion": {
+        "corbatas": 80000,
+        "bufandas": 60000,
+        "calcetines": 10000,
+        "total": 150000
+      },
+      "sales_incentive_pct": {
+        "corbatas": 2.0,
+        "bufandas": 1.5,
+        "calcetines": 1.0
+      },
+      "design_budget": {
+        "corbatas": 27000,
+        "bufandas": 17000,
+        "calcetines": 6000,
+        "total": 50000
+      },
+      "range_width": {
+        "corbatas": 16,
+        "bufandas": 7,
+        "calcetines": 5
+      },
+      "suppliers": {
+        "corbatas": "Premium",
+        "bufandas": "Estándar",
+        "calcetines": "Económica"
+      },
+      "planned_production": {
+        "corbatas": 215000,
+        "bufandas": 29500,
+        "calcetines": 23000
+      }
+    },
+    {
+      "year": 2029,
+      "status": "Maximización de Margen, Pleno Empleo Fabril y Rentabilidad Neta Positiva",
+      "prices": {
+        "corbatas": 18.5,
+        "bufandas": 30.0,
+        "calcetines": 3.5
+      },
+      "channel_discount_pct": 13.0,
+      "brand_promotion": {
+        "corbatas": 105000,
+        "bufandas": 75000,
+        "calcetines": 20000,
+        "total": 200000
+      },
+      "sales_incentive_pct": {
+        "corbatas": 2.0,
+        "bufandas": 1.5,
+        "calcetines": 1.0
+      },
+      "design_budget": {
+        "corbatas": 27000,
+        "bufandas": 17000,
+        "calcetines": 6000,
+        "total": 50000
+      },
+      "range_width": {
+        "corbatas": 18,
+        "bufandas": 9,
+        "calcetines": 7
+      },
+      "suppliers": {
+        "corbatas": "Premium",
+        "bufandas": "Estándar",
+        "calcetines": "Económica"
+      },
+      "planned_production": {
+        "corbatas": 215000,
+        "bufandas": 35500,
+        "calcetines": 27500
+      }
+    }
+  ],
+  "competitors_ranking": {
+    "2024": {
+      "smartone": 2175,
+      "spain10": 2175,
+      "realman": 2175,
+      "fashionclub": 2175,
+      "roura1940": 2175,
+      "puntoone": 2175,
+      "stuart20": 2175
+    },
+    "2025": {
+      "smartone": 2329.3,
+      "spain10": 2329.3,
+      "realman": 2329.3,
+      "fashionclub": 2329.3,
+      "roura1940": 2329.3,
+      "puntoone": 2329.3,
+      "stuart20": 2329.3
+    },
+    "2026": {
+      "smartone": 2653.0,
+      "spain10": 2565.6,
+      "realman": 2321.6,
+      "fashionclub": 1663.0,
+      "roura1940": 1832.7,
+      "puntoone": 2543.7,
+      "stuart20": 2356.7
+    },
+    "2027": {
+      "smartone": 2844.5,
+      "spain10": 2924.9,
+      "realman": 1590.9,
+      "fashionclub": 1539.7,
+      "roura1940": 2242.7,
+      "puntoone": 1670.8,
+      "stuart20": 2243.6
+    },
+    "2028": {
+      "smartone": 3009.8,
+      "spain10": 3066.9,
+      "realman": 2111.4,
+      "fashionclub": 1438.6,
+      "roura1940": 2596.5,
+      "puntoone": 2191.7,
+      "stuart20": 2197.0
+    },
+    "2029": {
+      "roura1940": 2879.0
+    }
+  },
+  "decision_stories": [
+    {
+      "year": 2026,
+      "periodIndex": 1,
+      "title": "Shock Inicial y Reajuste Operativo",
+      "strategicTheme": "Penalización por falta de decisión oportuna y erosión de márgenes en calcetines",
+      "initialState": {
+        "companyValue": 2329.3,
+        "cash": 1916796,
+        "totalRevenue": 3346747,
+        "diagnosticContext": "Roura1940 arranca el ejercicio con alta liquidez heredada de 2025 (1.9M€), pero con una ineficiencia estructural severa en la línea de calcetines donde el coste de fabricación superaba el precio de lista ($2.65).",
+        "criticalChallenge": "Reaccionar a la caída abrupta de demanda tras una omisión en la introducción de decisiones iniciales que provocó un castigo algorítmico del 5% ('No Decisión' = 0.95)."
+      },
+      "decisions": {
+        "prices": "Corbatas: 17.00€ | Bufandas: 27.90€ | Calcetines: 2.99€",
+        "operations": "Producción recortada a 174.6k uds para drenar existencias previas.",
+        "rationale": "Mantener calidad en proveedores (Premium en corbatas, Estándar en bufandas) pero frenar el desangre de calcetines ajustando el precio a 2.99€."
+      },
+      "consequences": {
+        "companyValue": 1832.7,
+        "netIncome": -859512,
+        "verdict": "El Valor de Compañía se desplomó a 1.832,7 puntos (puesto 6 de 7). La empresa sufrió una pérdida neta de 859k€ debido al impacto de costes fijos y gastos de estructura sobre una base de ingresos reducida a 2.55M€."
+      }
+    },
+    {
+      "year": 2027,
+      "periodIndex": 2,
+      "title": "Plan de Choque y Ofensiva Comercial",
+      "strategicTheme": "Subida moderada de precios (+15% max), aumento de producción y rescate de márgenes",
+      "initialState": {
+        "companyValue": 1832.7,
+        "cash": 1714753,
+        "totalRevenue": 2549514,
+        "diagnosticContext": "Tras el golpe de 2026, el equipo FINFORCE formaliza su Plan de Actuación ACBSP con un diagnóstico exhaustivo de DAFO y ratios de rotación.",
+        "criticalChallenge": "Recuperar el volumen de ventas sin caer en guerras de precios destructivas, resolviendo la pérdida en calcetines y aprovechando la fortaleza de marca en corbatas."
+      },
+      "decisions": {
+        "prices": "Corbatas: 17.50€ (+2.9%) | Bufandas: 28.50€ (+2.1%) | Calcetines: 3.00€ (+0.3%)",
+        "operations": "Expansión masiva de producción a 259,000 unidades (200k corbatas, 29k bufandas, 30k calcetines). Descuento canal al 13%.",
+        "rationale": "Diluir los elevados costes fijos de fábrica mediante economías de escala y aprovechar la cobertura de distribución (64%)."
+      },
+      "consequences": {
+        "companyValue": 2242.7,
+        "netIncome": -958687,
+        "verdict": "¡Rebote extraordinario en el valor de la empresa (+410 puntos)! Los ingresos rebotaron de 2.55M€ a 3.81M€ (+49%), y el margen bruto subió del 26.9% al 36.3%. Aunque el resultado neto contable aún reflejó gastos de reestructuración, la viabilidad operativa quedó restablecida."
+      }
+    },
+    {
+      "year": 2028,
+      "periodIndex": 3,
+      "title": "Turnaround: Retorno a Beneficios Netos",
+      "strategicTheme": "Calibración fina de precios, eficiencia en aprovisionamiento y reducción del agujero de calcetines",
+      "initialState": {
+        "companyValue": 2242.7,
+        "cash": 477169,
+        "totalRevenue": 3806940,
+        "diagnosticContext": "Roura1940 ha escalado al puesto 4 de la industria, superando a RealMan, FashionClub y PuntoOne que sufrieron caídas estrepitosas por malas decisiones financieras.",
+        "criticalChallenge": "Alcanzar por fin el punto de equilibrio (break-even) y cerrar la brecha con los líderes SmartOne y Spain10."
+      },
+      "decisions": {
+        "prices": "Corbatas: 18.20€ | Bufandas: 29.60€ | Calcetines: 3.40€ (+13.3%)",
+        "operations": "Producción de 267,500 uds (215k corbatas a plena capacidad). Racionalización de inventarios.",
+        "rationale": "El incremento agresivo pero justificado en calcetines (a 3.40€) casi elimina el margen negativo (-6.1% vs -52.7% en 2026), mientras que las corbatas entregan un margen bruto récord del 46.7%."
+      },
+      "consequences": {
+        "companyValue": 2596.5,
+        "netIncome": 111404,
+        "verdict": "¡Éxito histórico! Resultado Neto positivo de +111.404€ y Valor de Compañía ascendiendo a 2.596,5 puntos (+354 puntos). Roura1940 consolida el tercer puesto absoluto de la industria, pisándole los talones a SmartOne y Spain10."
+      }
+    },
+    {
+      "year": 2029,
+      "periodIndex": 4,
+      "title": "Consolidación Triunfal y Plena Rentabilidad",
+      "strategicTheme": "Margen bruto cercano al 50%, calcetines rentables (+24%) y récord de ingresos",
+      "initialState": {
+        "companyValue": 2596.5,
+        "cash": 474877,
+        "totalRevenue": 4116519,
+        "diagnosticContext": "La empresa llega al último periodo con telares al 94.9% de ocupación, valor de producto de 8.3/10 y cobertura comercial del 78%.",
+        "criticalChallenge": "Maximizar la generación neta de caja, rentabilizar todas las 3 líneas de negocio y presentar una auditoría impecable ante la Junta y ACBSP."
+      },
+      "decisions": {
+        "prices": "Corbatas: 18.50€ | Bufandas: 30.00€ | Calcetines: 3.50€",
+        "operations": "Capacidad ampliada a 293,000 uds (+8,000 en bufandas). Producción de 278,000 unidades. Promoción de marca reforzada a 200,000€.",
+        "rationale": "Aprovechar la alta disposición a pagar por la calidad Roura1940 y convertir la línea de calcetines en una fuente de beneficio genuino con margen del 24%."
+      },
+      "consequences": {
+        "companyValue": 2879.0,
+        "netIncome": 365700,
+        "verdict": "Culminación brillante del plan FINFORCE. Ingresos de 4,59M€ (+11.5%), Margen bruto del 49.3% (2.26M€), Resultado Neto récord de +365.700€ y Valor de Compañía alcanzando 2.879 puntos (crecimiento acumulado de +1.046 puntos desde el suelo de 2026)."
+      }
+    }
+  ]
+}

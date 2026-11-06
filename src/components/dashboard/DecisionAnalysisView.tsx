@@ -439,10 +439,13 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                           </div>
                         </div>
                         <div className="p-3 bg-zinc-50 rounded-lg border border-zinc-200">
-                          <span className="font-serif font-bold text-zinc-950 block text-xs mb-1">4. Tesorería</span>
-                          <div className="text-xs font-mono text-zinc-800">
-                            Préstamo: {currentStory.decisions.finance.shortTermLoan.toLocaleString()} €<br />
-                            Dividendo: {(currentStory.decisions.finance.dividendPayout * 100).toFixed(0)}%
+                          <span className="font-serif font-bold text-zinc-950 block text-xs mb-1">4. Tesorería & Financiación</span>
+                          <div className="text-xs font-mono text-zinc-800 space-y-0.5">
+                            <div>Préstamo CP: {currentStory.decisions.finance.shortTermLoan.toLocaleString()} €</div>
+                            {(currentStory.decisions.finance.longTermLoan ?? 0) > 0 && (
+                              <div>Préstamo LP: {(currentStory.decisions.finance.longTermLoan ?? 0).toLocaleString()} €</div>
+                            )}
+                            <div>Dividendo: {(currentStory.decisions.finance.dividendPayout * 100).toFixed(0)}%</div>
                           </div>
                         </div>
                       </div>

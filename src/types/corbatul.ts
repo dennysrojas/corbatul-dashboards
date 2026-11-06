@@ -29,6 +29,7 @@ export interface PeriodDecision {
   rawMaterialPurchaseSocks?: number;
   // Finanzas y Tesorería
   shortTermLoanRequest: number;
+  longTermLoanRequest?: number;
   longTermDebtRepayment: number;
   dividendPayoutRatio: number; // 0.0 a 1.0
 }
@@ -79,6 +80,7 @@ export interface RoundDecisionStory {
     };
     finance: {
       shortTermLoan: number;
+      longTermLoan?: number;
       debtRepayment: number;
       dividendPayout: number;
       financeRationale: string;

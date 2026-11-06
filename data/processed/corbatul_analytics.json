@@ -65,20 +65,21 @@
       "priceStandard": 17.0,
       "pricePremium": 27.9,
       "priceSocks": 2.99,
-      "marketingBudget": 155000,
+      "marketingBudget": 167000,
       "salesForceHeadcount": 14,
       "productionOrdersStandard": 136500,
       "productionOrdersPremium": 17598,
       "productionOrdersSocks": 20517,
       "plantShifts": 2,
-      "maintenanceBudget": 25000,
+      "maintenanceBudget": 50400,
       "qualityControlBudget": 50400,
       "plantExpansionUnits": 0,
       "rawMaterialPurchaseStandard": 136500,
       "rawMaterialPurchasePremium": 17598,
-      "shortTermLoanRequest": 0,
+      "shortTermLoanRequest": 50000,
       "longTermDebtRepayment": 0,
-      "dividendPayoutRatio": 0.0
+      "dividendPayoutRatio": 0.0,
+      "longTermLoanRequest": 900000
     },
     {
       "period": 2,
@@ -93,12 +94,12 @@
       "productionOrdersPremium": 29000,
       "productionOrdersSocks": 30000,
       "plantShifts": 2,
-      "maintenanceBudget": 25000,
+      "maintenanceBudget": 58950,
       "qualityControlBudget": 50000,
       "plantExpansionUnits": 0,
       "rawMaterialPurchaseStandard": 200000,
       "rawMaterialPurchasePremium": 29000,
-      "shortTermLoanRequest": 0,
+      "shortTermLoanRequest": 50000,
       "longTermDebtRepayment": 0,
       "dividendPayoutRatio": 0.0
     },
@@ -120,9 +121,10 @@
       "plantExpansionUnits": 0,
       "rawMaterialPurchaseStandard": 215000,
       "rawMaterialPurchasePremium": 29500,
-      "shortTermLoanRequest": 0,
+      "shortTermLoanRequest": 50000,
       "longTermDebtRepayment": 0,
-      "dividendPayoutRatio": 0.0
+      "dividendPayoutRatio": 0.0,
+      "longTermLoanRequest": 600000
     },
     {
       "period": 4,
@@ -142,7 +144,7 @@
       "plantExpansionUnits": 8000,
       "rawMaterialPurchaseStandard": 215000,
       "rawMaterialPurchasePremium": 35500,
-      "shortTermLoanRequest": 102332,
+      "shortTermLoanRequest": 50000,
       "longTermDebtRepayment": 0,
       "dividendPayoutRatio": 0.0
     }
@@ -156,7 +158,7 @@
       "strategicTheme": "Penalización por falta de decisión oportuna y erosión de márgenes en calcetines",
       "initialState": {
         "cashStarting": 1916796,
-        "inventoryStartingUnits": 5236,
+        "inventoryStartingUnits": 5888,
         "nominalCapacity": 285000,
         "inheritedSharePrice": 2329.3,
         "inheritedRank": 6,
@@ -168,16 +170,16 @@
         "commercial": {
           "priceStandard": 17.0,
           "pricePremium": 27.9,
-          "marketingBudget": 155000,
+          "marketingBudget": 167000,
           "salesForceCount": 14,
-          "commercialRationale": "Corbatas 17.0€, Bufandas 27.9€, Calcetines 2.99€. Descuento canal: 12.0%.",
+          "commercialRationale": "Corbatas 17.0€, Bufandas 27.9€, Calcetines 2.99€. Promoción de marca: 167.000 €. Descuento canal: 12.0%.",
           "priceSocks": 2.99
         },
         "production": {
           "ordersStandard": 136500,
           "ordersPremium": 17598,
           "plantShifts": 2,
-          "maintenanceBudget": 25000,
+          "maintenanceBudget": 50400,
           "qualityControlBudget": 50400,
           "plantExpansionUnits": 0,
           "productionRationale": "Fabricación 174615 uds. Proveedores: Corbatas (Premium), Bufandas (Estándar), Calcetines (Económica).",
@@ -190,17 +192,18 @@
           "rawMaterialSocks": 20517
         },
         "finance": {
-          "shortTermLoan": 0,
+          "shortTermLoan": 50000,
           "debtRepayment": 0,
           "dividendPayout": 0.0,
-          "financeRationale": "Priorización de solvencia patrimonial, cobertura de fondos de maniobra y control de deuda a largo plazo."
+          "financeRationale": "Préstamo LP: 900.000 € a largo plazo, Préstamo CP: 50.000 €. Cobertura de fondos de maniobra y solvencia.",
+          "longTermLoan": 900000
         },
         "strategicHypothesis": "Ronda 2026: Fortalecer margen bruto global y revertir el desbalance histórico de costes en la línea de calcetines."
       },
       "consequences": {
         "operationalImpact": {
           "unitsProduced": 174615,
-          "utilizationRate": 88.5,
+          "utilizationRate": 0.6126,
           "overtimeIncidence": "Turno optimizado sin cuellos de botella",
           "machineBreakdowns": "Mantenimiento preventivo regular",
           "stockoutOccurred": false,
@@ -212,15 +215,15 @@
           "grossProfit": 686172,
           "grossMargin": 0.269,
           "cogsSummary": "Coste de ventas de 1,863,342€. Margen bruto: 26.9%.",
-          "netIncome": -859512,
-          "netMargin": -0.33712778200080484,
+          "netIncome": -841512,
+          "netMargin": -33.0,
           "endingCash": 1714753,
           "financialVerdict": "El Valor de Compañía se desplomó a 1.832,7 puntos (puesto 6 de 7). La empresa sufrió una pérdida neta de 859k€ debido al impacto de costes fijos y gastos de estructura sobre una base de ingresos reducida a 2.55M€."
         },
         "competitiveImpact": {
           "endingSharePrice": 1832.7,
           "sharePriceDelta": -496.6,
-          "marketShare": 0.157,
+          "marketShare": 10.4,
           "marketRank": 6,
           "competitorMovements": "Valor de la Compañía alcanza 1832.7 puntos (Puesto 6 de 7)."
         },
@@ -235,7 +238,7 @@
       "strategicTheme": "Subida moderada de precios (+15% max), aumento de producción y rescate de márgenes",
       "initialState": {
         "cashStarting": 1714753,
-        "inventoryStartingUnits": 10081,
+        "inventoryStartingUnits": 5236,
         "nominalCapacity": 285000,
         "inheritedSharePrice": 1832.7,
         "inheritedRank": 5,
@@ -256,7 +259,7 @@
           "ordersStandard": 200000,
           "ordersPremium": 29000,
           "plantShifts": 2,
-          "maintenanceBudget": 25000,
+          "maintenanceBudget": 58950,
           "qualityControlBudget": 50000,
           "plantExpansionUnits": 0,
           "productionRationale": "Fabricación 259000 uds. Proveedores: Corbatas (Premium), Bufandas (Estándar), Calcetines (Económica).",
@@ -269,17 +272,18 @@
           "rawMaterialSocks": 30000
         },
         "finance": {
-          "shortTermLoan": 0,
+          "shortTermLoan": 50000,
           "debtRepayment": 0,
           "dividendPayout": 0.0,
-          "financeRationale": "Priorización de solvencia patrimonial, cobertura de fondos de maniobra y control de deuda a largo plazo."
+          "financeRationale": "Solicitud préstamo a corto plazo: 50.000 € para sustituir vencimientos y estabilizar tesorería.",
+          "longTermLoan": 0
         },
         "strategicHypothesis": "Ronda 2027: Fortalecer margen bruto global y revertir el desbalance histórico de costes en la línea de calcetines."
       },
       "consequences": {
         "operationalImpact": {
           "unitsProduced": 259000,
-          "utilizationRate": 88.5,
+          "utilizationRate": 0.8917,
           "overtimeIncidence": "Turno optimizado sin cuellos de botella",
           "machineBreakdowns": "Mantenimiento preventivo regular",
           "stockoutOccurred": false,
@@ -289,11 +293,11 @@
         "financialImpact": {
           "totalRevenue": 3806940,
           "grossProfit": 1380009,
-          "grossMargin": 0.363,
+          "grossMargin": 36.3,
           "cogsSummary": "Coste de ventas de 2,426,931€. Margen bruto: 36.3%.",
-          "netIncome": -958687,
-          "netMargin": -0.25182613857849084,
-          "endingCash": 1714753,
+          "netIncome": -940687,
+          "netMargin": -24.7,
+          "endingCash": 53811,
           "financialVerdict": "¡Rebote extraordinario en el valor de la empresa (+410 puntos)! Los ingresos rebotaron de 2.55M€ a 3.81M€ (+49%), y el margen bruto subió del 26.9% al 36.3%. Aunque el resultado neto contable aún reflejó gastos de reestructuración, la viabilidad operativa quedó restablecida."
         },
         "competitiveImpact": {
@@ -313,8 +317,8 @@
       "roundTitle": "2028 · Turnaround: Retorno a Beneficios Netos",
       "strategicTheme": "Calibración fina de precios, eficiencia en aprovisionamiento y reducción del agujero de calcetines",
       "initialState": {
-        "cashStarting": 477169,
-        "inventoryStartingUnits": 16049,
+        "cashStarting": 53811,
+        "inventoryStartingUnits": 10081,
         "nominalCapacity": 285000,
         "inheritedSharePrice": 2242.7,
         "inheritedRank": 3,
@@ -348,10 +352,11 @@
           "rawMaterialSocks": 23000
         },
         "finance": {
-          "shortTermLoan": 0,
+          "shortTermLoan": 50000,
           "debtRepayment": 0,
           "dividendPayout": 0.0,
-          "financeRationale": "Priorización de solvencia patrimonial, cobertura de fondos de maniobra y control de deuda a largo plazo."
+          "financeRationale": "Préstamo LP: 600.000 €, Préstamo CP: 50.000 €. Reestructuración de pasivos y fondeo estratégico.",
+          "longTermLoan": 600000
         },
         "strategicHypothesis": "Ronda 2028: Fortalecer margen bruto global y revertir el desbalance histórico de costes en la línea de calcetines."
       },
@@ -372,7 +377,7 @@
           "cogsSummary": "Coste de ventas de 2,214,831€. Margen bruto: 46.2%.",
           "netIncome": 111404,
           "netMargin": 0.02706267115492483,
-          "endingCash": 477169,
+          "endingCash": 634699,
           "financialVerdict": "¡Éxito histórico! Resultado Neto positivo de +111.404€ y Valor de Compañía ascendiendo a 2.596,5 puntos (+354 puntos). Roura1940 consolida el tercer puesto absoluto de la industria, pisándole los talones a SmartOne y Spain10."
         },
         "competitiveImpact": {
@@ -392,9 +397,9 @@
       "roundTitle": "2029 · Consolidación Triunfal y Plena Rentabilidad",
       "strategicTheme": "Margen bruto cercano al 50%, calcetines rentables (+24%) y récord de ingresos",
       "initialState": {
-        "cashStarting": 474877,
-        "inventoryStartingUnits": 6436,
-        "nominalCapacity": 293000,
+        "cashStarting": 634699,
+        "inventoryStartingUnits": 16049,
+        "nominalCapacity": 285000,
         "inheritedSharePrice": 2596.5,
         "inheritedRank": 3,
         "inheritedMarketShare": 14.1,
@@ -427,10 +432,11 @@
           "rawMaterialSocks": 27500
         },
         "finance": {
-          "shortTermLoan": 102332,
+          "shortTermLoan": 50000,
           "debtRepayment": 0,
           "dividendPayout": 0.0,
-          "financeRationale": "Priorización de solvencia patrimonial, cobertura de fondos de maniobra y control de deuda a largo plazo."
+          "financeRationale": "Priorización de solvencia patrimonial, cobertura de fondos de maniobra y control de deuda a largo plazo.",
+          "longTermLoan": 0
         },
         "strategicHypothesis": "Ronda 2029: Fortalecer margen bruto global y revertir el desbalance histórico de costes en la línea de calcetines."
       },
@@ -505,8 +511,8 @@
       },
       "earningsBeforeTaxes": -859512,
       "incomeTaxes": 0,
-      "netIncome": -859512,
-      "netMargin": -0.33712778200080484,
+      "netIncome": -841512,
+      "netMargin": -0.33006761288622066,
       "balanceSheet": {
         "cashAndEquivalents": 1714753,
         "accountsReceivable": 353854,
@@ -564,10 +570,10 @@
       },
       "earningsBeforeTaxes": -958687,
       "incomeTaxes": 0,
-      "netIncome": -958687,
-      "netMargin": -0.25182613857849084,
+      "netIncome": -940687,
+      "netMargin": -0.247,
       "balanceSheet": {
-        "cashAndEquivalents": 1714753,
+        "cashAndEquivalents": 53811,
         "accountsReceivable": 353854,
         "inventoriesFinishedGoods": 120972,
         "inventoriesRawMaterials": 28467,
@@ -614,7 +620,7 @@
       },
       "ebitda": 15019,
       "ebit": -110481,
-      "operatingMargin": -0.02683845258578911,
+      "operatingMargin": -0.027,
       "financialResults": {
         "interestExpense": 101115,
         "interestIncome": 0,
@@ -626,7 +632,7 @@
       "netIncome": 111404,
       "netMargin": 0.02706267115492483,
       "balanceSheet": {
-        "cashAndEquivalents": 477169,
+        "cashAndEquivalents": 634699,
         "accountsReceivable": 353854,
         "inventoriesFinishedGoods": 192588,
         "inventoriesRawMaterials": 28467,
@@ -711,12 +717,12 @@
       "nominalCapacity": 285000,
       "practicalCapacity": 285000,
       "effectiveProductionUnits": 174615,
-      "capacityUtilizationRate": 0.885,
+      "capacityUtilizationRate": 0.6126,
       "overtimeHoursPercent": 2.5,
       "machineBreakdownRate": 1.2,
       "qualityDefectRate": 1.5,
       "unitProductionCost": 10.67,
-      "inventoryBeginning": 5236,
+      "inventoryBeginning": 5888,
       "inventoryEnding": 5236,
       "inventoryHoldingCostIncurred": 12000,
       "marketDemand": 175267,
@@ -731,12 +737,12 @@
       "nominalCapacity": 285000,
       "practicalCapacity": 285000,
       "effectiveProductionUnits": 259000,
-      "capacityUtilizationRate": 0.885,
+      "capacityUtilizationRate": 0.8917,
       "overtimeHoursPercent": 2.5,
       "machineBreakdownRate": 1.2,
       "qualityDefectRate": 1.5,
-      "unitProductionCost": 9.37,
-      "inventoryBeginning": 10081,
+      "unitProductionCost": 8.67,
+      "inventoryBeginning": 5236,
       "inventoryEnding": 10081,
       "inventoryHoldingCostIncurred": 12000,
       "marketDemand": 254155,
@@ -756,7 +762,7 @@
       "machineBreakdownRate": 1.2,
       "qualityDefectRate": 1.5,
       "unitProductionCost": 8.28,
-      "inventoryBeginning": 16049,
+      "inventoryBeginning": 10081,
       "inventoryEnding": 16049,
       "inventoryHoldingCostIncurred": 12000,
       "marketDemand": 261532,
@@ -775,8 +781,8 @@
       "overtimeHoursPercent": 2.5,
       "machineBreakdownRate": 1.2,
       "qualityDefectRate": 1.5,
-      "unitProductionCost": 8.37,
-      "inventoryBeginning": 6436,
+      "unitProductionCost": 7.38,
+      "inventoryBeginning": 16049,
       "inventoryEnding": 6436,
       "inventoryHoldingCostIncurred": 12000,
       "marketDemand": 287613,
@@ -881,12 +887,12 @@
       "year": 2026,
       "firmId": "roura1940",
       "firmName": "Roura1940 (FINFORCE)",
-      "marketShareUnits": 0.139,
-      "marketShareRevenue": 0.145,
+      "marketShareUnits": 0.104,
+      "marketShareRevenue": 0.104,
       "averagePrice": 16.0,
       "qualityPerceptionScore": 8.3,
       "totalRevenue": 2549514,
-      "netIncome": -859512,
+      "netIncome": -841512,
       "accumulatedNetIncome": 0,
       "sharePrice": 1832.7,
       "marketCap": 1832700,
@@ -976,7 +982,7 @@
       "averagePrice": 16.0,
       "qualityPerceptionScore": 8.3,
       "totalRevenue": 3806940,
-      "netIncome": -958687,
+      "netIncome": -940687,
       "accumulatedNetIncome": 0,
       "sharePrice": 2242.7,
       "marketCap": 2242700,

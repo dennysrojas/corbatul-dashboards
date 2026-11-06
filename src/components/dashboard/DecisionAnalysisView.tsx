@@ -371,7 +371,7 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                           <span className="font-serif font-bold text-zinc-950 text-sm">1. Comercial & Precios</span>
                           <span className="font-mono text-xs text-zinc-700 font-bold">{currentStory.decisions.commercial.salesForceCount} Vendedores</span>
                         </div>
-                        <div className="grid grid-cols-3 gap-2.5 text-center mb-2.5 font-mono">
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-center mb-2.5 font-mono">
                           <div className="bg-white p-2.5 rounded-lg border border-zinc-200">
                             <span className="text-xs text-zinc-500 block font-sans">Corbatas</span>
                             <span className="font-bold text-zinc-950 text-base tabular-nums">{currentStory.decisions.commercial.priceStandard.toFixed(2)} €</span>
@@ -379,6 +379,12 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                           <div className="bg-white p-2.5 rounded-lg border border-zinc-200">
                             <span className="text-xs text-zinc-500 block font-sans">Bufandas</span>
                             <span className="font-bold text-zinc-950 text-base tabular-nums">{currentStory.decisions.commercial.pricePremium.toFixed(2)} €</span>
+                          </div>
+                          <div className="bg-white p-2.5 rounded-lg border border-zinc-200">
+                            <span className="text-xs text-zinc-500 block font-sans">Calcetines</span>
+                            <span className="font-bold text-zinc-950 text-base tabular-nums">
+                              {(currentStory.decisions.commercial.priceSocks ?? dataset.decisions.find(d => d.period === currentStory.period)?.priceSocks ?? 2.99).toFixed(2)} €
+                            </span>
                           </div>
                           <div className="bg-white p-2.5 rounded-lg border border-zinc-200">
                             <span className="text-xs text-zinc-500 block font-sans">Promoción</span>
@@ -396,7 +402,7 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                           <span className="font-serif font-bold text-zinc-950 text-sm">2. Confección & Telares</span>
                           <span className="text-xs font-mono text-zinc-700">Mantenim: ${(currentStory.decisions.production.maintenanceBudget / 1000).toFixed(0)}k</span>
                         </div>
-                        <div className="grid grid-cols-2 gap-2.5 text-center mb-2.5 font-mono">
+                        <div className="grid grid-cols-3 gap-2.5 text-center mb-2.5 font-mono">
                           <div className="bg-white p-2.5 rounded-lg border border-zinc-200">
                             <span className="text-xs text-zinc-500 block font-sans">Corbatas</span>
                             <span className="font-bold text-zinc-950 text-base tabular-nums">{currentStory.decisions.production.ordersStandard.toLocaleString()} uds</span>
@@ -404,6 +410,12 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                           <div className="bg-white p-2.5 rounded-lg border border-zinc-200">
                             <span className="text-xs text-zinc-500 block font-sans">Bufandas</span>
                             <span className="font-bold text-zinc-950 text-base tabular-nums">{currentStory.decisions.production.ordersPremium.toLocaleString()} uds</span>
+                          </div>
+                          <div className="bg-white p-2.5 rounded-lg border border-zinc-200">
+                            <span className="text-xs text-zinc-500 block font-sans">Calcetines</span>
+                            <span className="font-bold text-zinc-950 text-base tabular-nums">
+                              {(currentStory.decisions.production.ordersSocks ?? dataset.decisions.find(d => d.period === currentStory.period)?.productionOrdersSocks ?? 20517).toLocaleString()} uds
+                            </span>
                           </div>
                         </div>
                         {currentStory.decisions.production.plantExpansionUnits > 0 && (
@@ -422,7 +434,8 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                           <span className="font-serif font-bold text-zinc-950 block text-xs mb-1">3. Abastecimiento</span>
                           <div className="text-xs font-mono text-zinc-800">
                             Corbatas: {currentStory.decisions.sourcing.rawMaterialStandard.toLocaleString()} uds<br />
-                            Bufandas: {currentStory.decisions.sourcing.rawMaterialPremium.toLocaleString()} uds
+                            Bufandas: {currentStory.decisions.sourcing.rawMaterialPremium.toLocaleString()} uds<br />
+                            Calcetines: {(currentStory.decisions.sourcing.rawMaterialSocks ?? dataset.decisions.find(d => d.period === currentStory.period)?.productionOrdersSocks ?? 20517).toLocaleString()} uds
                           </div>
                         </div>
                         <div className="p-3 bg-zinc-50 rounded-lg border border-zinc-200">
@@ -552,14 +565,14 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
           <div className="p-4 bg-zinc-50 border-b border-zinc-200 flex justify-between items-center">
             <div>
               <h3 className="font-serif font-bold text-sm text-zinc-950">
-                Matriz Comparativa de Decisiones Corbatul (Periodo 1 al 8)
+                Matriz Comparativa de Decisiones Corbatul (Periodos 2026 a 2029)
               </h3>
               <p className="text-xs text-zinc-600">
                 Historial completo de parámetros enviados en cada ronda de la simulación.
               </p>
             </div>
-            <span className="text-xs font-mono uppercase bg-zinc-100 px-3 py-1 rounded border border-zinc-200 text-zinc-800 font-bold">
-              Firma 3 - Sideral Textil
+            <span className="text-xs font-mono uppercase bg-amber-100 text-amber-900 px-3 py-1 rounded border border-amber-300 font-bold">
+              Roura 1940 (FINFORCE)
             </span>
           </div>
 
@@ -571,6 +584,7 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                   <th className="py-3 px-3">Tema Estratégico</th>
                   <th className="py-3 px-3 text-right">Precio Corbatas</th>
                   <th className="py-3 px-3 text-right">Precio Bufandas</th>
+                  <th className="py-3 px-3 text-right">Precio Calcetines</th>
                   <th className="py-3 px-3 text-center">Turnos</th>
                   <th className="py-3 px-3 text-right">Promoción</th>
                   <th className="py-3 px-3 text-right">Diseño & I+D</th>
@@ -598,6 +612,9 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                       </td>
                       <td className="py-3 px-3 text-right font-mono text-zinc-900 tabular-nums">{s.decisions.commercial.priceStandard.toFixed(2)} €</td>
                       <td className="py-3 px-3 text-right font-mono text-zinc-900 tabular-nums">{s.decisions.commercial.pricePremium.toFixed(2)} €</td>
+                      <td className="py-3 px-3 text-right font-mono text-zinc-900 tabular-nums">
+                        {(s.decisions.commercial.priceSocks ?? dataset.decisions.find(d => d.period === s.period)?.priceSocks ?? 2.99).toFixed(2)} €
+                      </td>
                       <td className="py-3 px-3 text-center">
                         <span className="px-2 py-0.5 rounded text-xs font-mono bg-zinc-200 font-bold text-zinc-900">
                           {s.decisions.production.plantShifts}T

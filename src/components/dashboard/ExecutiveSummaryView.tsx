@@ -16,6 +16,9 @@ export const ExecutiveSummaryView: React.FC<ExecutiveSummaryViewProps> = ({
   const scorecard = getExecutiveScorecard(dataset, selectedPeriod);
   const variance = dataset.variances.find(v => v.period === selectedPeriod);
   const ourFirm = dataset.meta.firms.find(f => f.id === dataset.meta.primaryFirmId);
+  const currentFin = dataset.financials.find(f => f.firmId === dataset.meta.primaryFirmId && f.period === selectedPeriod);
+  const currentDec = dataset.decisions.find(d => d.firmId === dataset.meta.primaryFirmId && d.period === selectedPeriod);
+  const currentProductMetrics = dataset.productMetrics?.[selectedPeriod];
 
   const formatCurrency = (val: number) => `${Math.round(val).toLocaleString()} €`;
   const formatPercent = (val: number) => `${val.toFixed(1)}%`;
@@ -82,7 +85,7 @@ export const ExecutiveSummaryView: React.FC<ExecutiveSummaryViewProps> = ({
             {formatCurrency(scorecard.totalRevenue)}
           </div>
           <div className="text-xs text-zinc-600 mt-1.5">
-            Volumen combinado Estándar & Premium
+            Volumen combinado: Corbatas, Bufandas & Calcetines
           </div>
         </div>
 
@@ -133,6 +136,161 @@ export const ExecutiveSummaryView: React.FC<ExecutiveSummaryViewProps> = ({
           </div>
           <div className="text-xs text-zinc-600 mt-1.5">
             Utilización Planta: <strong className="text-zinc-950 font-mono tabular-nums">{formatPercent(scorecard.capacityUtilization)}</strong>
+          </div>
+        </div>
+      </div>
+
+      {/* Portfolio de Productos (Corbatas, Bufandas, Calcetines) */}
+      <div className="bg-white border border-zinc-200 rounded-xl p-6 shadow-sm w-full">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-zinc-200">
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-roura-teal" />
+              <h3 className="text-lg font-serif font-bold text-zinc-950">
+                Portfolio de Productos Textil (Periodo {selectedPeriod} · {2025 + selectedPeriod})
+              </h3>
+            </div>
+            <p className="text-xs text-zinc-600 mt-0.5">
+              Desglose directivo por línea de producto: Corbatas (Core), Bufandas (Premium) y Calcetines (Complementario).
+            </p>
+          </div>
+          <span className="text-xs font-mono uppercase tracking-wider text-zinc-800 bg-zinc-100 px-3 py-1.5 rounded border border-zinc-300 font-semibold">
+            3 Líneas Activas • Roura 1940
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5">
+          {/* 1. Corbatas */}
+          <div className="bg-zinc-50 border border-zinc-200 rounded-xl p-4 hover:border-zinc-300 transition-all">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-lg">👔</span>
+                <div>
+                  <h4 className="font-serif font-bold text-sm text-zinc-950">Corbatas</h4>
+                  <span className="text-[10px] uppercase font-mono tracking-wider text-zinc-500">Línea Core / Masivo</span>
+                </div>
+              </div>
+              <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-tweed-light text-tweed-dark border border-tweed/30">
+                Margen {currentProductMetrics ? formatPercent(currentProductMetrics.corbatas.grossMarginPct * 100) : '46.7%'}
+              </span>
+            </div>
+
+            <div className="mt-4 space-y-2 text-xs font-mono">
+              <div className="flex justify-between py-1 border-b border-zinc-200/60">
+                <span className="font-sans text-zinc-600">Precio de Venta:</span>
+                <strong className="text-zinc-950 tabular-nums">
+                  {(currentProductMetrics?.corbatas.price ?? currentDec?.priceStandard ?? 17).toFixed(2)} €
+                </strong>
+              </div>
+              <div className="flex justify-between py-1 border-b border-zinc-200/60">
+                <span className="font-sans text-zinc-600">Ingresos Totales:</span>
+                <strong className="text-zinc-950 tabular-nums">
+                  {formatCurrency(currentProductMetrics?.corbatas.revenue ?? currentFin?.revenueStandard ?? 0)}
+                </strong>
+              </div>
+              <div className="flex justify-between py-1 border-b border-zinc-200/60">
+                <span className="font-sans text-zinc-600">Unidades Vendidas:</span>
+                <span className="text-zinc-800 tabular-nums">
+                  {(currentProductMetrics?.corbatas.sold ?? 0).toLocaleString()} uds
+                </span>
+              </div>
+              <div className="flex justify-between py-1">
+                <span className="font-sans text-zinc-600">Stock Final de Telar:</span>
+                <span className="text-zinc-800 tabular-nums">
+                  {(currentProductMetrics?.corbatas.endingStockUnits ?? 0).toLocaleString()} uds
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* 2. Bufandas */}
+          <div className="bg-zinc-50 border border-zinc-200 rounded-xl p-4 hover:border-zinc-300 transition-all">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-lg">🧣</span>
+                <div>
+                  <h4 className="font-serif font-bold text-sm text-zinc-950">Bufandas</h4>
+                  <span className="text-[10px] uppercase font-mono tracking-wider text-zinc-500">Línea Premium / Seda</span>
+                </div>
+              </div>
+              <span className="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-tweed-light text-tweed-dark border border-tweed/30">
+                Margen {currentProductMetrics ? formatPercent(currentProductMetrics.bufandas.grossMarginPct * 100) : '49.4%'}
+              </span>
+            </div>
+
+            <div className="mt-4 space-y-2 text-xs font-mono">
+              <div className="flex justify-between py-1 border-b border-zinc-200/60">
+                <span className="font-sans text-zinc-600">Precio de Venta:</span>
+                <strong className="text-zinc-950 tabular-nums">
+                  {(currentProductMetrics?.bufandas.price ?? currentDec?.pricePremium ?? 27.9).toFixed(2)} €
+                </strong>
+              </div>
+              <div className="flex justify-between py-1 border-b border-zinc-200/60">
+                <span className="font-sans text-zinc-600">Ingresos Totales:</span>
+                <strong className="text-zinc-950 tabular-nums">
+                  {formatCurrency(currentProductMetrics?.bufandas.revenue ?? currentFin?.revenuePremium ?? 0)}
+                </strong>
+              </div>
+              <div className="flex justify-between py-1 border-b border-zinc-200/60">
+                <span className="font-sans text-zinc-600">Unidades Vendidas:</span>
+                <span className="text-zinc-800 tabular-nums">
+                  {(currentProductMetrics?.bufandas.sold ?? 0).toLocaleString()} uds
+                </span>
+              </div>
+              <div className="flex justify-between py-1">
+                <span className="font-sans text-zinc-600">Stock Final de Telar:</span>
+                <span className="text-zinc-800 tabular-nums">
+                  {(currentProductMetrics?.bufandas.endingStockUnits ?? 0).toLocaleString()} uds
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* 3. Calcetines */}
+          <div className="bg-zinc-50 border border-zinc-200 rounded-xl p-4 hover:border-zinc-300 transition-all">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <span className="text-lg">🧦</span>
+                <div>
+                  <h4 className="font-serif font-bold text-sm text-zinc-950">Calcetines</h4>
+                  <span className="text-[10px] uppercase font-mono tracking-wider text-zinc-500">Línea Complementaria</span>
+                </div>
+              </div>
+              <span className={`px-2 py-0.5 rounded text-[11px] font-mono font-bold border ${
+                (currentProductMetrics?.calcetines.grossMarginPct ?? 0) >= 0
+                  ? 'bg-tweed-light text-tweed-dark border-tweed/30'
+                  : 'bg-rust-light text-rust-dark border-rust/30'
+              }`}>
+                Margen {currentProductMetrics ? formatPercent(currentProductMetrics.calcetines.grossMarginPct * 100) : '+24.0%'}
+              </span>
+            </div>
+
+            <div className="mt-4 space-y-2 text-xs font-mono">
+              <div className="flex justify-between py-1 border-b border-zinc-200/60">
+                <span className="font-sans text-zinc-600">Precio de Venta:</span>
+                <strong className="text-zinc-950 tabular-nums">
+                  {(currentProductMetrics?.calcetines.price ?? currentDec?.priceSocks ?? 2.99).toFixed(2)} €
+                </strong>
+              </div>
+              <div className="flex justify-between py-1 border-b border-zinc-200/60">
+                <span className="font-sans text-zinc-600">Ingresos Totales:</span>
+                <strong className="text-zinc-950 tabular-nums">
+                  {formatCurrency(currentProductMetrics?.calcetines.revenue ?? currentFin?.revenueSocks ?? 0)}
+                </strong>
+              </div>
+              <div className="flex justify-between py-1 border-b border-zinc-200/60">
+                <span className="font-sans text-zinc-600">Unidades Vendidas:</span>
+                <span className="text-zinc-800 tabular-nums">
+                  {(currentProductMetrics?.calcetines.sold ?? 0).toLocaleString()} uds
+                </span>
+              </div>
+              <div className="flex justify-between py-1">
+                <span className="font-sans text-zinc-600">Stock Final de Telar:</span>
+                <span className="text-zinc-800 tabular-nums">
+                  {(currentProductMetrics?.calcetines.endingStockUnits ?? 0).toLocaleString()} uds
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -170,7 +170,8 @@
           "pricePremium": 27.9,
           "marketingBudget": 155000,
           "salesForceCount": 14,
-          "commercialRationale": "Corbatas 17.0€, Bufandas 27.9€, Calcetines 2.99€. Descuento canal: 12.0%."
+          "commercialRationale": "Corbatas 17.0€, Bufandas 27.9€, Calcetines 2.99€. Descuento canal: 12.0%.",
+          "priceSocks": 2.99
         },
         "production": {
           "ordersStandard": 136500,
@@ -179,12 +180,14 @@
           "maintenanceBudget": 25000,
           "qualityControlBudget": 50400,
           "plantExpansionUnits": 0,
-          "productionRationale": "Fabricación 174615 uds. Proveedores: Corbatas (Premium), Bufandas (Estándar), Calcetines (Económica)."
+          "productionRationale": "Fabricación 174615 uds. Proveedores: Corbatas (Premium), Bufandas (Estándar), Calcetines (Económica).",
+          "ordersSocks": 20517
         },
         "sourcing": {
           "rawMaterialStandard": 136500,
           "rawMaterialPremium": 17598,
-          "sourcingRationale": "Amplitud de gama: 16 corbatas, 7 bufandas, 5 calcetines."
+          "sourcingRationale": "Amplitud de gama: 16 corbatas, 7 bufandas, 5 calcetines.",
+          "rawMaterialSocks": 20517
         },
         "finance": {
           "shortTermLoan": 0,
@@ -246,7 +249,8 @@
           "pricePremium": 28.5,
           "marketingBudget": 150000,
           "salesForceCount": 14,
-          "commercialRationale": "Corbatas 17.5€, Bufandas 28.5€, Calcetines 3.0€. Descuento canal: 13.0%."
+          "commercialRationale": "Corbatas 17.5€, Bufandas 28.5€, Calcetines 3.0€. Descuento canal: 13.0%.",
+          "priceSocks": 3.0
         },
         "production": {
           "ordersStandard": 200000,
@@ -255,12 +259,14 @@
           "maintenanceBudget": 25000,
           "qualityControlBudget": 50000,
           "plantExpansionUnits": 0,
-          "productionRationale": "Fabricación 259000 uds. Proveedores: Corbatas (Premium), Bufandas (Estándar), Calcetines (Económica)."
+          "productionRationale": "Fabricación 259000 uds. Proveedores: Corbatas (Premium), Bufandas (Estándar), Calcetines (Económica).",
+          "ordersSocks": 30000
         },
         "sourcing": {
           "rawMaterialStandard": 200000,
           "rawMaterialPremium": 29000,
-          "sourcingRationale": "Amplitud de gama: 16 corbatas, 7 bufandas, 5 calcetines."
+          "sourcingRationale": "Amplitud de gama: 16 corbatas, 7 bufandas, 5 calcetines.",
+          "rawMaterialSocks": 30000
         },
         "finance": {
           "shortTermLoan": 0,
@@ -322,7 +328,8 @@
           "pricePremium": 29.6,
           "marketingBudget": 150000,
           "salesForceCount": 14,
-          "commercialRationale": "Corbatas 18.2€, Bufandas 29.6€, Calcetines 3.4€. Descuento canal: 13.0%."
+          "commercialRationale": "Corbatas 18.2€, Bufandas 29.6€, Calcetines 3.4€. Descuento canal: 13.0%.",
+          "priceSocks": 3.4
         },
         "production": {
           "ordersStandard": 215000,
@@ -331,12 +338,14 @@
           "maintenanceBudget": 25000,
           "qualityControlBudget": 50000,
           "plantExpansionUnits": 0,
-          "productionRationale": "Fabricación 267500 uds. Proveedores: Corbatas (Premium), Bufandas (Estándar), Calcetines (Económica)."
+          "productionRationale": "Fabricación 267500 uds. Proveedores: Corbatas (Premium), Bufandas (Estándar), Calcetines (Económica).",
+          "ordersSocks": 23000
         },
         "sourcing": {
           "rawMaterialStandard": 215000,
           "rawMaterialPremium": 29500,
-          "sourcingRationale": "Amplitud de gama: 16 corbatas, 7 bufandas, 5 calcetines."
+          "sourcingRationale": "Amplitud de gama: 16 corbatas, 7 bufandas, 5 calcetines.",
+          "rawMaterialSocks": 23000
         },
         "finance": {
           "shortTermLoan": 0,
@@ -398,7 +407,8 @@
           "pricePremium": 30.0,
           "marketingBudget": 200000,
           "salesForceCount": 14,
-          "commercialRationale": "Corbatas 18.5€, Bufandas 30.0€, Calcetines 3.5€. Descuento canal: 13.0%."
+          "commercialRationale": "Corbatas 18.5€, Bufandas 30.0€, Calcetines 3.5€. Descuento canal: 13.0%.",
+          "priceSocks": 3.5
         },
         "production": {
           "ordersStandard": 215000,
@@ -407,12 +417,14 @@
           "maintenanceBudget": 25000,
           "qualityControlBudget": 50000,
           "plantExpansionUnits": 8000,
-          "productionRationale": "Fabricación 278000 uds. Proveedores: Corbatas (Premium), Bufandas (Estándar), Calcetines (Económica)."
+          "productionRationale": "Fabricación 278000 uds. Proveedores: Corbatas (Premium), Bufandas (Estándar), Calcetines (Económica).",
+          "ordersSocks": 27500
         },
         "sourcing": {
           "rawMaterialStandard": 215000,
           "rawMaterialPremium": 35500,
-          "sourcingRationale": "Amplitud de gama: 18 corbatas, 9 bufandas, 7 calcetines."
+          "sourcingRationale": "Amplitud de gama: 18 corbatas, 9 bufandas, 7 calcetines.",
+          "rawMaterialSocks": 27500
         },
         "finance": {
           "shortTermLoan": 102332,
@@ -459,7 +471,7 @@
       "year": 2026,
       "firmId": "roura1940",
       "revenueStandard": 2062116,
-      "revenuePremium": 487398,
+      "revenuePremium": 435640,
       "revenueSocks": 51758,
       "totalRevenue": 2549514,
       "costOfGoodsSold": {
@@ -518,7 +530,7 @@
       "year": 2027,
       "firmId": "roura1940",
       "revenueStandard": 3024138,
-      "revenuePremium": 782802,
+      "revenuePremium": 713099,
       "revenueSocks": 69703,
       "totalRevenue": 3806940,
       "costOfGoodsSold": {
@@ -577,7 +589,7 @@
       "year": 2028,
       "firmId": "roura1940",
       "revenueStandard": 3291437,
-      "revenuePremium": 825082,
+      "revenuePremium": 752956,
       "revenueSocks": 72126,
       "totalRevenue": 4116519,
       "costOfGoodsSold": {
@@ -636,7 +648,7 @@
       "year": 2029,
       "firmId": "roura1940",
       "revenueStandard": 3567604,
-      "revenuePremium": 1021434,
+      "revenuePremium": 929395,
       "revenueSocks": 92039,
       "totalRevenue": 4589037,
       "costOfGoodsSold": {
@@ -1349,5 +1361,175 @@
         }
       ]
     }
-  ]
+  ],
+  "productMetrics": {
+    "1": {
+      "year": 2026,
+      "corbatas": {
+        "name": "Corbatas",
+        "category": "Línea Core / Masivo",
+        "price": 17.0,
+        "produced": 136500,
+        "sold": 137842,
+        "revenue": 2062116,
+        "grossMarginPct": 0.279,
+        "endingStockUnits": 3324,
+        "capacity": 215000,
+        "occupancyPct": 0.635,
+        "catalogWidth": 16
+      },
+      "bufandas": {
+        "name": "Bufandas",
+        "category": "Línea Premium / Moda",
+        "price": 27.9,
+        "produced": 17598,
+        "sold": 17745,
+        "revenue": 435640,
+        "grossMarginPct": 0.316,
+        "endingStockUnits": 426,
+        "capacity": 30000,
+        "occupancyPct": 0.587,
+        "catalogWidth": 7
+      },
+      "calcetines": {
+        "name": "Calcetines",
+        "category": "Línea Complementaria",
+        "price": 2.99,
+        "produced": 20517,
+        "sold": 19680,
+        "revenue": 51758,
+        "grossMarginPct": -0.527,
+        "endingStockUnits": 1486,
+        "capacity": 40000,
+        "occupancyPct": 0.513,
+        "catalogWidth": 5
+      }
+    },
+    "2": {
+      "year": 2027,
+      "corbatas": {
+        "name": "Corbatas",
+        "category": "Línea Core / Masivo",
+        "price": 17.5,
+        "produced": 200000,
+        "sold": 198695,
+        "revenue": 3024138,
+        "grossMarginPct": 0.366,
+        "endingStockUnits": 4629,
+        "capacity": 215000,
+        "occupancyPct": 0.93,
+        "catalogWidth": 16
+      },
+      "bufandas": {
+        "name": "Bufandas",
+        "category": "Línea Premium / Moda",
+        "price": 28.5,
+        "produced": 29000,
+        "sold": 28754,
+        "revenue": 713099,
+        "grossMarginPct": 0.416,
+        "endingStockUnits": 672,
+        "capacity": 30000,
+        "occupancyPct": 0.967,
+        "catalogWidth": 7
+      },
+      "calcetines": {
+        "name": "Calcetines",
+        "category": "Línea Complementaria",
+        "price": 3.0,
+        "produced": 30000,
+        "sold": 26706,
+        "revenue": 69703,
+        "grossMarginPct": -0.328,
+        "endingStockUnits": 4780,
+        "capacity": 40000,
+        "occupancyPct": 0.75,
+        "catalogWidth": 5
+      }
+    },
+    "3": {
+      "year": 2028,
+      "corbatas": {
+        "name": "Corbatas",
+        "category": "Línea Core / Masivo",
+        "price": 18.2,
+        "produced": 215000,
+        "sold": 207924,
+        "revenue": 3291437,
+        "grossMarginPct": 0.467,
+        "endingStockUnits": 11705,
+        "capacity": 215000,
+        "occupancyPct": 1.0,
+        "catalogWidth": 16
+      },
+      "bufandas": {
+        "name": "Bufandas",
+        "category": "Línea Premium / Moda",
+        "price": 29.6,
+        "produced": 29500,
+        "sold": 29241,
+        "revenue": 752956,
+        "grossMarginPct": 0.492,
+        "endingStockUnits": 931,
+        "capacity": 30000,
+        "occupancyPct": 0.983,
+        "catalogWidth": 7
+      },
+      "calcetines": {
+        "name": "Calcetines",
+        "category": "Línea Complementaria",
+        "price": 3.4,
+        "produced": 23000,
+        "sold": 24367,
+        "revenue": 72126,
+        "grossMarginPct": -0.061,
+        "endingStockUnits": 3413,
+        "capacity": 40000,
+        "occupancyPct": 0.575,
+        "catalogWidth": 5
+      }
+    },
+    "4": {
+      "year": 2029,
+      "corbatas": {
+        "name": "Corbatas",
+        "category": "Línea Core / Masivo",
+        "price": 18.5,
+        "produced": 215000,
+        "sold": 221728,
+        "revenue": 3567604,
+        "grossMarginPct": 0.499,
+        "endingStockUnits": 4977,
+        "capacity": 215000,
+        "occupancyPct": 1.0,
+        "catalogWidth": 18
+      },
+      "bufandas": {
+        "name": "Bufandas",
+        "category": "Línea Premium / Moda",
+        "price": 30.0,
+        "produced": 35500,
+        "sold": 35609,
+        "revenue": 929395,
+        "grossMarginPct": 0.494,
+        "endingStockUnits": 822,
+        "capacity": 38000,
+        "occupancyPct": 0.934,
+        "catalogWidth": 9
+      },
+      "calcetines": {
+        "name": "Calcetines",
+        "category": "Línea Complementaria",
+        "price": 3.5,
+        "produced": 27500,
+        "sold": 30276,
+        "revenue": 92039,
+        "grossMarginPct": 0.24,
+        "endingStockUnits": 637,
+        "capacity": 40000,
+        "occupancyPct": 0.688,
+        "catalogWidth": 7
+      }
+    }
+  }
 }

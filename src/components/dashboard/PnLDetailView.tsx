@@ -93,7 +93,7 @@ export const PnLDetailView: React.FC<PnLDetailViewProps> = ({
             {formatCurrency(currentFin.totalRevenue)}
           </div>
           <div className="text-xs text-zinc-600 mt-2 font-medium">
-            Std: <span className="tabular-nums font-mono text-zinc-800">{formatCurrency(currentFin.revenueStandard)}</span> | Prem: <span className="tabular-nums font-mono text-zinc-800">{formatCurrency(currentFin.revenuePremium)}</span>
+            Corbatas: <span className="tabular-nums font-mono text-zinc-800">{formatCurrency(currentFin.revenueStandard)}</span> | Bufandas: <span className="tabular-nums font-mono text-zinc-800">{formatCurrency(currentFin.revenuePremium)}</span> | Calcetines: <span className="tabular-nums font-mono text-zinc-800">{formatCurrency(currentFin.revenueSocks ?? 0)}</span>
           </div>
         </div>
 
@@ -178,11 +178,18 @@ export const PnLDetailView: React.FC<PnLDetailViewProps> = ({
                 <td className="py-2 px-4 text-right">{renderVariance(currentFin.revenueStandard, prevFin?.revenueStandard, 'revenue')}</td>
               </tr>
               <tr>
-                <td className="py-2 px-8 text-zinc-800">Ventas Línea Bufandas & Calcetines (Premium / Complemento)</td>
+                <td className="py-2 px-8 text-zinc-800">Ventas Línea Bufandas (Premium / Temporada)</td>
                 <td className="py-2 px-4 text-right font-mono text-zinc-900 tabular-nums">{formatCurrency(currentFin.revenuePremium)}</td>
                 <td className="py-2 px-4 text-right font-mono text-zinc-600 tabular-nums">{((currentFin.revenuePremium / currentFin.totalRevenue) * 100).toFixed(1)}%</td>
                 <td className="py-2 px-4 text-right font-mono text-zinc-600 tabular-nums">{formatCurrency(prevFin?.revenuePremium)}</td>
                 <td className="py-2 px-4 text-right">{renderVariance(currentFin.revenuePremium, prevFin?.revenuePremium, 'revenue')}</td>
+              </tr>
+              <tr>
+                <td className="py-2 px-8 text-zinc-800">Ventas Línea Calcetines (Complementario / Entrada)</td>
+                <td className="py-2 px-4 text-right font-mono text-zinc-900 tabular-nums">{formatCurrency(currentFin.revenueSocks ?? 0)}</td>
+                <td className="py-2 px-4 text-right font-mono text-zinc-600 tabular-nums">{(((currentFin.revenueSocks ?? 0) / currentFin.totalRevenue) * 100).toFixed(1)}%</td>
+                <td className="py-2 px-4 text-right font-mono text-zinc-600 tabular-nums">{formatCurrency(prevFin?.revenueSocks ?? 0)}</td>
+                <td className="py-2 px-4 text-right">{renderVariance(currentFin.revenueSocks, prevFin?.revenueSocks, 'revenue')}</td>
               </tr>
 
               {/* COGS (Costo de Ventas - Polaridad Expense) */}

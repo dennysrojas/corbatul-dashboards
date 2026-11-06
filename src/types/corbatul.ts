@@ -6,15 +6,19 @@
 
 export interface PeriodDecision {
   period: number;
+  year?: number;
   firmId: string;
-  // Comercial y Precios (Línea Estándar Poliéster vs Premium Seda)
+  // Comercial y Precios (Línea Estándar Corbatas, Bufandas Seda y Calcetines)
   priceStandard: number;
   pricePremium: number;
+  priceSocks?: number;
+  channelDiscount?: number;
   marketingBudget: number;
   salesForceHeadcount: number;
   // Manufactura, Telares y Capacidad
   productionOrdersStandard: number;
   productionOrdersPremium: number;
+  productionOrdersSocks?: number;
   plantShifts: 1 | 2 | 3; // Turno 1 (Normal), Turno 2 (Vespertino), Turno 3 (Nocturno/Horas Extras)
   maintenanceBudget: number; // Mantenimiento preventivo de telares
   qualityControlBudget: number; // Aseguramiento y control de costuras
@@ -22,6 +26,7 @@ export interface PeriodDecision {
   // Abastecimiento de Materias Primas
   rawMaterialPurchaseStandard: number; // Metros tela poliéster
   rawMaterialPurchasePremium: number; // Metros seda natural
+  rawMaterialPurchaseSocks?: number;
   // Finanzas y Tesorería
   shortTermLoanRequest: number;
   longTermDebtRepayment: number;
@@ -51,6 +56,7 @@ export interface RoundDecisionStory {
     commercial: {
       priceStandard: number;
       pricePremium: number;
+      priceSocks?: number;
       marketingBudget: number;
       salesForceCount: number;
       commercialRationale: string;
@@ -58,6 +64,7 @@ export interface RoundDecisionStory {
     production: {
       ordersStandard: number;
       ordersPremium: number;
+      ordersSocks?: number;
       plantShifts: 1 | 2 | 3;
       maintenanceBudget: number;
       qualityControlBudget: number;
@@ -67,6 +74,7 @@ export interface RoundDecisionStory {
     sourcing: {
       rawMaterialStandard: number;
       rawMaterialPremium: number;
+      rawMaterialSocks?: number;
       sourcingRationale: string;
     };
     finance: {
@@ -115,6 +123,7 @@ export interface CompanyFinancials {
   firmId: string;
   revenueStandard: number;
   revenuePremium: number;
+  revenueSocks?: number;
   totalRevenue: number;
 
   costOfGoodsSold: {
@@ -230,12 +239,35 @@ export interface PeriodVarianceAnalysis {
   }[];
 }
 
+export interface ProductMetricItem {
+  name: string;
+  category: string;
+  price: number;
+  produced: number;
+  sold: number;
+  revenue: number;
+  grossMarginPct: number;
+  endingStockUnits: number;
+  capacity?: number;
+  occupancyPct?: number;
+  catalogWidth?: number;
+}
+
+export interface PeriodProductMetrics {
+  year: number;
+  corbatas: ProductMetricItem;
+  bufandas: ProductMetricItem;
+  calcetines: ProductMetricItem;
+}
+
 export interface SimulationDataset {
   meta: {
     generatedAt: string;
     totalPeriods: number;
     primaryFirmId: string;
     currencySymbol: string;
+    caseStudy?: string;
+    team?: string;
     firms: { id: string; name: string; isOurFirm: boolean; color: string }[];
   };
   periods: number[];
@@ -245,4 +277,5 @@ export interface SimulationDataset {
   operations: ProductionMetrics[];
   competitors: MarketCompetitorState[];
   variances: PeriodVarianceAnalysis[];
+  productMetrics?: Record<number, PeriodProductMetrics>;
 }

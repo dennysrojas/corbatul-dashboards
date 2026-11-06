@@ -76,7 +76,7 @@ export const OperationsInventoryView: React.FC<OperationsInventoryViewProps> = (
         {/* Costo Unitario de Producción */}
         <div className="bg-white border border-zinc-200 rounded-xl p-5 shadow-sm">
           <div className="text-xs font-mono font-bold text-zinc-600 uppercase tracking-wider">
-            Costo Unitario por Corbata
+            Costo Unitario Medio de Confección
           </div>
           <div className="text-2xl sm:text-3xl font-serif font-bold text-denim mt-2 tabular-nums">
             {formatCurrency(currentOps.unitProductionCost)}
@@ -120,7 +120,7 @@ export const OperationsInventoryView: React.FC<OperationsInventoryViewProps> = (
           <div className="flex items-center gap-2 mb-4 pb-3 border-b border-zinc-200">
             <span className="w-2.5 h-2.5 rounded-full bg-denim" />
             <h3 className="font-serif font-bold text-base text-zinc-950">
-              Balance Físico de Existencias (Corbatas Terminadas)
+              Balance Físico Consolidado de Existencias (Corbatas, Bufandas & Calcetines)
             </h3>
           </div>
 
@@ -201,6 +201,123 @@ export const OperationsInventoryView: React.FC<OperationsInventoryViewProps> = (
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Matriz Operativa por Producto: Corbatas, Bufandas, Calcetines */}
+      <div className="bg-white border border-zinc-200 rounded-xl p-6 shadow-sm w-full">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-zinc-200">
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="w-2.5 h-2.5 rounded-full bg-denim" />
+              <h3 className="font-serif font-bold text-base text-zinc-950">
+                Desglose Operativo por Línea de Producto (Periodo {selectedPeriod} · {2025 + selectedPeriod})
+              </h3>
+            </div>
+            <p className="text-xs text-zinc-600 mt-0.5">
+              Auditoría fabril detallada de capacidad, confección efectiva, amplitud de catálogo y stock remanente para Corbatas, Bufandas y Calcetines.
+            </p>
+          </div>
+          <span className="text-xs font-mono uppercase bg-zinc-100 px-3 py-1.5 rounded border border-zinc-300 font-semibold text-zinc-800">
+            Fábrica Roura 1940
+          </span>
+        </div>
+
+        <div className="overflow-x-auto mt-4 w-full">
+          <table className="w-full text-xs text-left">
+            <thead className="bg-zinc-100 text-zinc-800 uppercase font-mono text-[11px] border-b border-zinc-200 font-semibold">
+              <tr>
+                <th className="py-3 px-3">Línea de Confección</th>
+                <th className="py-3 px-3 text-right">Capacidad</th>
+                <th className="py-3 px-3 text-right">Producción Efectiva</th>
+                <th className="py-3 px-3 text-right">% Ocupación</th>
+                <th className="py-3 px-3 text-center">Gama (Modelos)</th>
+                <th className="py-3 px-3 text-right">Unidades Vendidas</th>
+                <th className="py-3 px-3 text-right">Stock Final</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-zinc-200 font-mono">
+              {dataset.productMetrics?.[selectedPeriod] ? (
+                <>
+                  <tr className="hover:bg-zinc-50 transition-colors">
+                    <td className="py-3 px-3 font-serif font-bold text-zinc-950 font-sans flex items-center gap-2">
+                      <span>👔</span> Corbatas (Core)
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-zinc-800">
+                      {dataset.productMetrics[selectedPeriod].corbatas.capacity?.toLocaleString()} uds
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums font-bold text-zinc-950">
+                      {dataset.productMetrics[selectedPeriod].corbatas.produced.toLocaleString()} uds
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-tweed-dark font-bold">
+                      {((dataset.productMetrics[selectedPeriod].corbatas.occupancyPct || 0) * 100).toFixed(1)}%
+                    </td>
+                    <td className="py-3 px-3 text-center tabular-nums text-zinc-800">
+                      {dataset.productMetrics[selectedPeriod].corbatas.catalogWidth} modelos
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-zinc-900">
+                      {dataset.productMetrics[selectedPeriod].corbatas.sold.toLocaleString()} uds
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-denim font-bold">
+                      {dataset.productMetrics[selectedPeriod].corbatas.endingStockUnits.toLocaleString()} uds
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-zinc-50 transition-colors">
+                    <td className="py-3 px-3 font-serif font-bold text-zinc-950 font-sans flex items-center gap-2">
+                      <span>🧣</span> Bufandas (Premium)
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-zinc-800">
+                      {dataset.productMetrics[selectedPeriod].bufandas.capacity?.toLocaleString()} uds
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums font-bold text-zinc-950">
+                      {dataset.productMetrics[selectedPeriod].bufandas.produced.toLocaleString()} uds
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-tweed-dark font-bold">
+                      {((dataset.productMetrics[selectedPeriod].bufandas.occupancyPct || 0) * 100).toFixed(1)}%
+                    </td>
+                    <td className="py-3 px-3 text-center tabular-nums text-zinc-800">
+                      {dataset.productMetrics[selectedPeriod].bufandas.catalogWidth} modelos
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-zinc-900">
+                      {dataset.productMetrics[selectedPeriod].bufandas.sold.toLocaleString()} uds
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-denim font-bold">
+                      {dataset.productMetrics[selectedPeriod].bufandas.endingStockUnits.toLocaleString()} uds
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-zinc-50 transition-colors bg-amber-50/30">
+                    <td className="py-3 px-3 font-serif font-bold text-zinc-950 font-sans flex items-center gap-2">
+                      <span>🧦</span> Calcetines (Complemento)
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-zinc-800">
+                      {dataset.productMetrics[selectedPeriod].calcetines.capacity?.toLocaleString()} uds
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums font-bold text-zinc-950">
+                      {dataset.productMetrics[selectedPeriod].calcetines.produced.toLocaleString()} uds
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-tweed-dark font-bold">
+                      {((dataset.productMetrics[selectedPeriod].calcetines.occupancyPct || 0) * 100).toFixed(1)}%
+                    </td>
+                    <td className="py-3 px-3 text-center tabular-nums text-zinc-800">
+                      {dataset.productMetrics[selectedPeriod].calcetines.catalogWidth} modelos
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-zinc-900">
+                      {dataset.productMetrics[selectedPeriod].calcetines.sold.toLocaleString()} uds
+                    </td>
+                    <td className="py-3 px-3 text-right tabular-nums text-denim font-bold">
+                      {dataset.productMetrics[selectedPeriod].calcetines.endingStockUnits.toLocaleString()} uds
+                    </td>
+                  </tr>
+                </>
+              ) : (
+                <tr>
+                  <td colSpan={7} className="py-4 text-center text-zinc-500 font-sans">
+                    Cargando métricas de producto...
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

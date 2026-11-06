@@ -400,7 +400,7 @@ export const DecisionAnalysisView: React.FC<DecisionAnalysisViewProps> = ({
                       <div className="p-4 bg-zinc-50 rounded-xl border border-zinc-200">
                         <div className="flex items-center justify-between mb-2.5">
                           <span className="font-serif font-bold text-zinc-950 text-sm">2. Confección & Telares</span>
-                          <span className="text-xs font-mono text-zinc-700">Mantenim: ${(currentStory.decisions.production.maintenanceBudget / 1000).toFixed(0)}k</span>
+                          <span className="text-xs font-mono text-zinc-700">Mantenim: {(currentStory.decisions.production.maintenanceBudget / 1000).toFixed(0)}k €</span>
                         </div>
                         <div className="grid grid-cols-3 gap-2.5 text-center mb-2.5 font-mono">
                           <div className="bg-white p-2.5 rounded-lg border border-zinc-200">

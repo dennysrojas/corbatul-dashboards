@@ -41,8 +41,8 @@ export function calculatePeriodVariations(
     rootCauses.push({
       category: 'PRICE',
       description: priceChange > 0
-        ? `Incremento de precio estándar (+$${priceChange.toFixed(2)}) impulsó margen bruto a pesar del ajuste de volumen.`
-        : `Reducción de precio (-$${Math.abs(priceChange).toFixed(2)}) para proteger cuota de mercado sacrificando margen unitario.`,
+        ? `Incremento de precio estándar (+${priceChange.toFixed(2)} €) impulsó margen bruto a pesar del ajuste de volumen.`
+        : `Reducción de precio (-${Math.abs(priceChange).toFixed(2)} €) para proteger cuota de mercado sacrificando margen unitario.`,
       financialImpact: revenueImpact,
       type: revenueImpact >= 0 ? 'FAVORABLE' : 'UNFAVORABLE'
     });
@@ -85,7 +85,7 @@ export function calculatePeriodVariations(
   if (currentFin.financialResults.emergencyFinancingCost > 0) {
     rootCauses.push({
       category: 'FINANCIAL',
-      description: `Sobregiro o préstamo de emergencia activado con costo financiero punitivo de $${currentFin.financialResults.emergencyFinancingCost.toLocaleString()}.`,
+      description: `Sobregiro o préstamo de emergencia activado con costo financiero punitivo de ${currentFin.financialResults.emergencyFinancingCost.toLocaleString()} €.`,
       financialImpact: -currentFin.financialResults.emergencyFinancingCost,
       type: 'UNFAVORABLE'
     });

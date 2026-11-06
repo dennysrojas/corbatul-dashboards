@@ -580,7 +580,7 @@
         "companyValue": 2329.3,
         "cash": 1916796,
         "totalRevenue": 3346747,
-        "diagnosticContext": "Roura1940 arranca el ejercicio con alta liquidez heredada de 2025 (1.9M€), pero con una ineficiencia estructural severa en la línea de calcetines donde el coste de fabricación superaba el precio de lista ($2.65).",
+        "diagnosticContext": "Roura1940 arranca el ejercicio con alta liquidez heredada de 2025 (1.9M€), pero con una ineficiencia estructural severa en la línea de calcetines donde el coste de fabricación superaba el precio de lista (2.65 €).",
         "criticalChallenge": "Reaccionar a la caída abrupta de demanda tras una omisión en la introducción de decisiones iniciales que provocó un castigo algorítmico del 5% ('No Decisión' = 0.95)."
       },
       "decisions": {

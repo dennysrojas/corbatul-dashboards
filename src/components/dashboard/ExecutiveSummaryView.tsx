@@ -408,7 +408,7 @@ export const ExecutiveSummaryView: React.FC<ExecutiveSummaryViewProps> = ({
                       {cause.category}
                     </span>
                     <span className={`px-2.5 py-0.5 rounded text-xs font-mono font-bold border tabular-nums ${badgeColors[cause.type]}`}>
-                      Impacto: {cause.financialImpact >= 0 ? '+' : ''}${Math.round(cause.financialImpact).toLocaleString()}
+                      Impacto: {cause.financialImpact >= 0 ? '+' : ''}{Math.round(cause.financialImpact).toLocaleString()} €
                     </span>
                   </div>
                   <p className="text-xs text-zinc-800 leading-relaxed font-sans">

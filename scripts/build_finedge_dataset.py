@@ -521,7 +521,7 @@ def build_dataset():
                 "salesForcePayroll": 704420,
                 "qualityAssurance": 232200,
                 "plantMaintenance": 149250,
-                "generalAdministrative": 266205,
+                "generalAdministrative": 266090,
                 "totalOPEX": 1560075
             },
             "ebitda": -89081,

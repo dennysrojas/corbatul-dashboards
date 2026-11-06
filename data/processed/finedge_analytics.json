@@ -91,15 +91,15 @@
       "channelDiscount": 16.0,
       "marketingBudget": 208000,
       "salesForceHeadcount": 16,
-      "productionOrdersStandard": 210000,
-      "productionOrdersPremium": 35000,
-      "productionOrdersSocks": 28000,
+      "productionOrdersStandard": 202000,
+      "productionOrdersPremium": 30000,
+      "productionOrdersSocks": 15000,
       "plantShifts": 2,
       "maintenanceBudget": 30000,
       "qualityControlBudget": 48000,
       "plantExpansionUnits": 8000,
-      "rawMaterialPurchaseStandard": 210000,
-      "rawMaterialPurchasePremium": 35000,
+      "rawMaterialPurchaseStandard": 202000,
+      "rawMaterialPurchasePremium": 30000,
       "shortTermLoanRequest": 0,
       "longTermDebtRepayment": 300000,
       "dividendPayoutRatio": 0.0
@@ -116,7 +116,7 @@
       "salesForceHeadcount": 18,
       "productionOrdersStandard": 215000,
       "productionOrdersPremium": 38000,
-      "productionOrdersSocks": 35000,
+      "productionOrdersSocks": 28000,
       "plantShifts": 2,
       "maintenanceBudget": 35000,
       "qualityControlBudget": 52000,
@@ -256,19 +256,19 @@
           "commercialRationale": "Corbatas sube a 16.30€ alineado con Spain10 (captura +101k€ limpios de margen neto). Bufandas sube a 28.50€ como producto estrella. Calcetines se ajusta a 2.65€ para liquidar stock excedente."
         },
         "production": {
-          "ordersStandard": 210000,
-          "ordersPremium": 35000,
-          "ordersSocks": 28000,
+          "ordersStandard": 202000,
+          "ordersPremium": 30000,
+          "ordersSocks": 15000,
           "plantShifts": 2,
           "maintenanceBudget": 30000,
           "qualityControlBudget": 48000,
           "plantExpansionUnits": 8000,
-          "productionRationale": "Aprobación de inversión para ampliar la capacidad de bufandas a 38,000 unidades anuales, eliminando el cuello de botella fabril."
+          "productionRationale": "Ocupación al 94.0% en corbatas (202k), 100% en bufandas (30k) aprobando ampliación (+8k) para 2028, y reducción estratégica en calcetines a 15k para vaciar inventario remanente y ahorrar 45k€."
         },
         "sourcing": {
-          "rawMaterialStandard": 210000,
-          "rawMaterialPremium": 35000,
-          "sourcingRationale": "Aumento del catálogo de corbatas a 11 opciones y bufandas a 10 opciones; diseño sube a nivel 5."
+          "rawMaterialStandard": 202000,
+          "rawMaterialPremium": 30000,
+          "sourcingRationale": "Aumento del catálogo de corbatas a 11 opciones y bufandas a 9 opciones; diseño sube a nivel 5."
         },
         "finance": {
           "shortTermLoan": 0,
@@ -280,8 +280,8 @@
       },
       "consequences": {
         "operationalImpact": {
-          "unitsProduced": 273000,
-          "utilizationRate": 95.8,
+          "unitsProduced": 247000,
+          "utilizationRate": 86.7,
           "overtimeIncidence": "Operación fluida sin horas extras punitivas",
           "machineBreakdowns": "Mantenimiento al 100% de fiabilidad",
           "stockoutOccurred": false,
@@ -336,12 +336,12 @@
         "production": {
           "ordersStandard": 215000,
           "ordersPremium": 38000,
-          "ordersSocks": 35000,
+          "ordersSocks": 28000,
           "plantShifts": 2,
           "maintenanceBudget": 35000,
           "qualityControlBudget": 52000,
           "plantExpansionUnits": 20000,
-          "productionRationale": "Aprobación de ampliación de corbatas a 235k unidades y calcetines a 100k para acompañar la fuerte tracción comercial."
+          "productionRationale": "100% de ocupación en corbatas (215k) y bufandas (38k tras ampliación), y 70% de ocupación en calcetines (28k uds) reduciendo el coste unitario directo de 3.50€ a ~2.25€."
         },
         "sourcing": {
           "rawMaterialStandard": 215000,
@@ -358,8 +358,8 @@
       },
       "consequences": {
         "operationalImpact": {
-          "unitsProduced": 288000,
-          "utilizationRate": 91.5,
+          "unitsProduced": 281000,
+          "utilizationRate": 75.3,
           "overtimeIncidence": "Uso eficiente con alta productividad horaria",
           "machineBreakdowns": "Tasa de averías inferior al 0.5%",
           "stockoutOccurred": false,
@@ -730,8 +730,8 @@
       "firmId": "puntoone",
       "nominalCapacity": 285000,
       "practicalCapacity": 293000,
-      "effectiveProductionUnits": 273000,
-      "capacityUtilizationRate": 0.958,
+      "effectiveProductionUnits": 247000,
+      "capacityUtilizationRate": 0.867,
       "overtimeHoursPercent": 0.0,
       "machineBreakdownRate": 0.005,
       "qualityDefectRate": 0.018,
@@ -750,8 +750,8 @@
       "firmId": "puntoone",
       "nominalCapacity": 373000,
       "practicalCapacity": 373000,
-      "effectiveProductionUnits": 288000,
-      "capacityUtilizationRate": 0.772,
+      "effectiveProductionUnits": 281000,
+      "capacityUtilizationRate": 0.753,
       "overtimeHoursPercent": 0.0,
       "machineBreakdownRate": 0.004,
       "qualityDefectRate": 0.015,

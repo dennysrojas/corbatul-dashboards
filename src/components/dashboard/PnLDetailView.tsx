@@ -306,6 +306,13 @@ export const PnLDetailView: React.FC<PnLDetailViewProps> = ({
                 <td className="py-2 px-4 text-right font-mono text-zinc-600 tabular-nums">{formatCurrency(prevFin?.incomeTaxes)}</td>
                 <td className="py-2 px-4 text-right">{renderVariance(currentFin.incomeTaxes, prevFin?.incomeTaxes, 'expense')}</td>
               </tr>
+              <tr>
+                <td className="py-2 px-4 text-zinc-800">(+/-) Resultados Extraordinarios</td>
+                <td className="py-2 px-4 text-right font-mono text-zinc-900 tabular-nums">{formatCurrency(currentFin.extraordinaryIncome ?? 0)}</td>
+                <td className="py-2 px-4 text-right font-mono text-zinc-600 tabular-nums">{(((currentFin.extraordinaryIncome ?? 0) / currentFin.totalRevenue) * 100).toFixed(1)}%</td>
+                <td className="py-2 px-4 text-right font-mono text-zinc-600 tabular-nums">{formatCurrency(prevFin?.extraordinaryIncome ?? 0)}</td>
+                <td className="py-2 px-4 text-right">{renderVariance(currentFin.extraordinaryIncome ?? 0, prevFin?.extraordinaryIncome ?? 0, 'revenue')}</td>
+              </tr>
 
               {/* UTILIDAD NETA (Polaridad Revenue) */}
               <tr className="font-extrabold bg-tweed-light/80 text-tweed-dark text-sm border-t-2 border-tweed">

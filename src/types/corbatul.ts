@@ -162,6 +162,7 @@ export interface CompanyFinancials {
     netFinancialCost: number;
   };
 
+  extraordinaryIncome?: number;
   earningsBeforeTaxes: number;
   incomeTaxes: number;
   netIncome: number;

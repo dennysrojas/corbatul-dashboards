@@ -16,7 +16,8 @@ export default function DashboardPage() {
   const [selectedPeriod, setSelectedPeriod] = useState<number>(4); // Default to Period 4 (2029 - Cierre de Simulación)
   const [activeTab, setActiveTab] = useState<DashboardTab>('identity');
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState<boolean>(false);
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(false); // Modo Claro por defecto
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  const [currency, setCurrency] = useState<'$' | '€'>('$'); // Modo Claro por defecto
 
   const tabTitles: Record<DashboardTab, { title: string; subtitle: string; icon: string }> = {
     identity: {
@@ -107,6 +108,20 @@ export default function DashboardPage() {
                 </strong>
               </div>
 
+              {/* Currency Selector ($ / €) */}
+              <button
+                onClick={() => setCurrency(prev => prev === '$' ? '€' : '$')}
+                className={`px-3 py-1.5 text-xs font-mono font-bold rounded-lg border transition-all flex items-center gap-1.5 shadow-sm ${
+                  currency === '$'
+                    ? 'bg-roura-teal text-white border-roura-teal'
+                    : 'bg-white dark:bg-roura-navy text-roura-navy dark:text-roura-sky border-roura-beige-deep dark:border-roura-navy-light'
+                }`}
+                title="Alternar entre $ (Dólar del informe) y € (Euro del simulador)"
+              >
+                <span>Moneda:</span>
+                <span className="font-black text-sm">{currency}</span>
+              </button>
+
               {/* Theme Toggle Button (Light Mode / Dark Mode) */}
               <button
                 onClick={() => setIsDarkMode(prev => !prev)}
@@ -134,7 +149,7 @@ export default function DashboardPage() {
           {/* Main Dashboard Canvas */}
           <main className="p-6 sm:p-8 w-full flex-1">
             {activeTab === 'identity' && (
-              <TeamIdentityPlanView />
+              <TeamIdentityPlanView currency={currency} />
             )}
             {activeTab === 'decisions' && (
               <DecisionAnalysisView

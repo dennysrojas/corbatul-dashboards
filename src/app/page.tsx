@@ -17,7 +17,7 @@ export default function DashboardPage() {
   const [activeTab, setActiveTab] = useState<DashboardTab>('identity');
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState<boolean>(false);
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
-  const [currency, setCurrency] = useState<'$' | '€'>('$'); // Modo Claro por defecto
+  const [currency, setCurrency] = useState<'$' | '€'>('€'); // Modo Claro por defecto
 
   const tabTitles: Record<DashboardTab, { title: string; subtitle: string; icon: string }> = {
     identity: {

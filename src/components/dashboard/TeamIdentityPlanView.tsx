@@ -26,7 +26,7 @@ interface TeamIdentityPlanViewProps {
   currency?: '$' | '€';
 }
 
-export const TeamIdentityPlanView: React.FC<TeamIdentityPlanViewProps> = ({ currency = '$' }) => {
+export const TeamIdentityPlanView: React.FC<TeamIdentityPlanViewProps> = ({ currency = '€' }) => {
   const [selectedMember, setSelectedMember] = useState<'all' | 'agata' | 'ingrid' | 'andrea'>('all');
 
   return (
@@ -83,7 +83,7 @@ export const TeamIdentityPlanView: React.FC<TeamIdentityPlanViewProps> = ({ curr
           <div className="flex items-center gap-2">
             <span className="font-bold text-roura-teal dark:text-roura-sky uppercase font-mono tracking-wider">Convención:</span>
             <span className="font-mono font-semibold text-[11px] bg-roura-beige dark:bg-roura-navy px-2 py-0.5 rounded border border-roura-beige-deep dark:border-roura-navy-light">
-              Moneda: {currency} (según informe)
+              Moneda: {currency} (Euros • España)
             </span>
           </div>
         </div>
@@ -445,7 +445,7 @@ export const TeamIdentityPlanView: React.FC<TeamIdentityPlanViewProps> = ({ curr
               Misión &bull; Propuesta de Valor Textil
             </span>
             <blockquote className="font-serif italic text-xs text-roura-navy/90 dark:text-roura-beige-light leading-relaxed border-l-2 border-roura-teal pl-3 py-0.5">
-              «Confeccionar corbatas, bufandas y calcetines para hombre con diseño cuidado y calidad confiable a un precio justo, respaldados por más de 45 años de historia. No ser la opción más barata, sino dar el mayor valor por euro/dólar invertido: mejor diseño, materia prima de calidad y mayor presencia física y online.»
+              «Confeccionar corbatas, bufandas y calcetines para hombre con diseño cuidado y calidad confiable a un precio justo, respaldados por más de 45 años de historia. No ser la opción más barata, sino dar el mayor valor por euro invertido: mejor diseño, materia prima de calidad y mayor presencia física y online.»
             </blockquote>
           </div>
 

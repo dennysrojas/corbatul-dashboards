@@ -4,7 +4,7 @@ import React from 'react';
 import { SimulationDataset } from '../../types/corbatul';
 import { getExecutiveScorecard } from '../../lib/analytics';
 
-export type DashboardTab = 'decisions' | 'board' | 'pnl' | 'operations' | 'benchmark';
+export type DashboardTab = 'identity' | 'decisions' | 'board' | 'pnl' | 'operations' | 'benchmark';
 
 interface SidebarProps {
   dataset: SimulationDataset;
@@ -30,6 +30,12 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const ourFirm = dataset.meta.firms.find(f => f.id === dataset.meta.primaryFirmId);
 
   const menuItems: { id: DashboardTab; label: string; sublabel: string; icon: string; isPrimary?: boolean }[] = [
+    {
+      id: 'identity',
+      label: 'Identidad & Plan',
+      sublabel: 'Equipo FINFORCE, Torneo & Metas 2025',
+      icon: '🏛️',
+    },
     {
       id: 'decisions',
       label: 'Bitácora de Decisiones',

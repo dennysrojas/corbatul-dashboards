@@ -9,15 +9,21 @@ import { ExecutiveSummaryView } from '../components/dashboard/ExecutiveSummaryVi
 import { PnLDetailView } from '../components/dashboard/PnLDetailView';
 import { OperationsInventoryView } from '../components/dashboard/OperationsInventoryView';
 import { CompetitorBenchmarkingView } from '../components/dashboard/CompetitorBenchmarkingView';
+import { TeamIdentityPlanView } from '../components/dashboard/TeamIdentityPlanView';
 
 export default function DashboardPage() {
   const dataset = datasetJson as unknown as SimulationDataset;
   const [selectedPeriod, setSelectedPeriod] = useState<number>(4); // Default to Period 4 (2029 - Cierre de Simulación)
-  const [activeTab, setActiveTab] = useState<DashboardTab>('decisions');
+  const [activeTab, setActiveTab] = useState<DashboardTab>('identity');
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState<boolean>(false);
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false); // Modo Claro por defecto
 
   const tabTitles: Record<DashboardTab, { title: string; subtitle: string; icon: string }> = {
+    identity: {
+      icon: '🏛️',
+      title: 'Identidad, Torneo & Plan de Actuación',
+      subtitle: 'Equipo FINFORCE (ESPOCH) • ROURA 1940 • Metas & Situación 2025',
+    },
     decisions: {
       icon: '🧭',
       title: 'Bitácora Estratégica',
@@ -127,6 +133,9 @@ export default function DashboardPage() {
 
           {/* Main Dashboard Canvas */}
           <main className="p-6 sm:p-8 w-full flex-1">
+            {activeTab === 'identity' && (
+              <TeamIdentityPlanView />
+            )}
             {activeTab === 'decisions' && (
               <DecisionAnalysisView
                 dataset={dataset}

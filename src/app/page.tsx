@@ -162,7 +162,7 @@ export default function DashboardPage() {
               <ExecutiveSummaryView dataset={dataset} selectedPeriod={selectedPeriod} />
             )}
             {activeTab === 'pnl' && (
-              <PnLDetailView dataset={dataset} selectedPeriod={selectedPeriod} />
+              <PnLDetailView dataset={dataset} selectedPeriod={selectedPeriod} currency={currency} />
             )}
             {activeTab === 'operations' && (
               <OperationsInventoryView dataset={dataset} selectedPeriod={selectedPeriod} />
